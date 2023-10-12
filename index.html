@@ -196,7 +196,13 @@
           </div>
 
           <div class="uq-topYodare">
-            <div class="uq-topYodare_message js-YodareMessage is-show"></div>
+            <!-- <div class="uq-topYodare_message js-YodareMessage is-show"></div> -->
+            <div class="uq-topYodare_message js-YodareMessage is-show">
+              <span>ト</span>
+              <span>ゥ</span>
+              <span>ー</span>
+              <span>ト</span>
+            </div>
             <div class="uq-topYodare_character">
               <img src="./images/yodare.png" alt="よだれ兄弟" decoding="async">
             </div>
@@ -244,7 +250,17 @@
           ['今', '日', 'は', '水', '風', '呂', '1', '5', '度', 'の', '気', '分', '.', '.', '.'],
         ];
 
-        
+        yodare_message.forEach((message, i) => {
+          setTimeout(() => {
+            const yodare_message_element = document.querySelector('.js-YodareMessage');
+            yodare_message_element.innerHTML = '';
+            message.forEach((char, j) => {
+              setTimeout(() => {
+                yodare_message_element.innerHTML += '<span class="is-show">' + char + '</span>';
+              }, j * 100);
+            });
+          }, i * 5000);
+        });
         
       });
     </script>
