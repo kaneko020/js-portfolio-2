@@ -9,23 +9,41 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kaneko020.github.io/js-portfolio-2/">
     <meta property="og:title" content="Portfolio2 | サウナイキタイ">
-    <meta property="og:image" content="https://kaneko020.github.io/js-portfolio-2/images/sauna_ikitai2.png">
+    <meta property="og:image" content="https://kaneko020.github.io/js-portfolio-2/images/sauna_ikitai_thumbnail.png">
     <meta property="og:site_name" content="Portfolio2 | サウナイキタイ">
     <meta property="og:description" content="模写サイト | portfolio | サウナイキタイ" />
     <meta name="twitter:title" content="Portfolio1 | サウナイキタイ">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://kaneko020.github.io/js-portfolio-2/images/sauna_ikitai2.png">
+    <meta name="twitter:image" content="https://kaneko020.github.io/js-portfolio-2/images/sauna_ikitai_thumbnail.png">
     <meta name="twitter:description" content="模写サイト | portfolio | サウナイキタイ" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sp_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/ff5c8f4b0c.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   </head>
   <body>
     <div class="l-page" data-page-id="top" style="top: 0px;">
+      <div class="l-headerApp">
+        <div class="l-headerApp_content">
+          <a class="l-headerAppBanner" href="#">
+            <div class="l-headerAppBanner_img">
+              <img src="./images/sauna_ikitai_app.png" alt="サウナイキタイのアプリ">
+            </div>
+            <div class="l-headerAppBanner_body">
+              <strong>サウナイキタイのアプリ</strong>
+              <p>地図からサウナが探せる！</p>
+            </div>
+            <div class="l-headerAppBanner_button">
+              無料で使う
+            </div>
+          </a>
+        </div>
+        <a class="l-headerAppBanner" href="#"></a>
+      </div>
       <header class="l-header">
         <div class="l-header_content">
           <div class="l-header_inner">
@@ -71,7 +89,7 @@
               </div>
             </div>
             <!-- スマホメニュー -->
-            <!-- <div class="p-menu p-menu--globalNav" data-type="globalNav">
+            <div class="p-menu p-menu--globalNav" data-type="globalNav">
               <div class="p-menu_overlay js-menuTrigger" data-target="globalNav"></div>
               <div class="p-menu_content">
                 <nav class="p-menuNav">
@@ -123,7 +141,7 @@
                   </ul>
                 </nav>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
       </header>
@@ -163,7 +181,9 @@
             </form>
             <div class="uq-topGps">
               <a class="js-filterGeoSubmit">
-                <span>現在地から探す</span>
+                <span>
+                  現在地から探す
+                </span>
               </a>
             </div>
           </div>
@@ -187,6 +207,7 @@
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        // TOPの画像切り替え
         const bg_elements = document.querySelectorAll('.js-bg');
         let index = 1;
 
