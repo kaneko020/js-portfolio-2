@@ -196,13 +196,7 @@
           </div>
 
           <div class="uq-topYodare">
-            <!-- <div class="uq-topYodare_message js-YodareMessage is-show"></div> -->
-            <div class="uq-topYodare_message js-YodareMessage is-show">
-              <span>ト</span>
-              <span>ゥ</span>
-              <span>ー</span>
-              <span>ト</span>
-            </div>
+            <div class="uq-topYodare_message js-YodareMessage is-show"></div>
             <div class="uq-topYodare_character">
               <img src="./images/yodare.png" alt="よだれ兄弟" decoding="async">
             </div>
@@ -231,37 +225,60 @@
           bg_index = (bg_index + 1) % bg_elements.length;
         }, 5000);
 
-        
+        // よだれ兄弟メッセージ
         const yodare_message = [
-          ['サ', 'ウ', 'ナ', 'チ', 'ャ', 'ン', 'ス', '.', '.', '.', '！', '！'],
-          ['サ', 'ウ', 'ナ', 'と', '水', '風', '呂', 'の', '最', '初', 'の', 'ア', 'タ', 'ッ', 'チ', 'メ', 'ン', 'ト', 'が', '大', '事'],
-          ['深', 'い', '水', '風', '呂', 'に', '入', 'り', 'た', 'い'],
-          ['バ', 'イ', 'ブ', 'ラ', 'で', '冷', 'や', 'さ', 'れ', 'た', 'い'],
-          ['静', 'か', 'な', '水', '風', '呂', 'に', '入', 'り', 'た', 'い'],
-          ['体', 'を', 'よ', 'く', '拭', 'い', 'て', 'か', 'ら', 'サ', 'ウ', 'ナ', '室', 'に', '入', 'ろ', 'う', 'な', '！'],
-          ['サ', 'ウ', 'ナ', '！', '水', '風', '呂', '！', '外', '気', '浴', '！'],
-          ['今', '日', 'は', 'セ', 'ル', 'フ', 'ロ', 'ウ', 'リ', 'ュ', 'ウ', 'で', 'き', 'る', 'サ', 'ウ', 'ナ', 'に', '行', 'こ', 'う', 'か', 'な'],
-          ['冬', 'は', '外', '気', '浴', 'が', '気', '持', 'ち', 'い', 'い', 'な', 'あ'],
-          ['サ', 'ウ', 'ナ', '.', '.', '.', 'サ', 'ウ', 'ナ', '.', '.', '.'],
-          ['サ', 'ウ', 'ナ', '室', 'で', 'は', 'タ', 'オ', 'ル', 'を', '絞', 'ら', 'な', 'い', 'で', 'ね', '！'],
-          ['毎', '週', '水', '曜', '日', 'は', '水', '曜', 'サ', '活'],
-          ['外', '気', '浴', 'で', '風', 'に', 'な', 'り', 'た', 'い'],
-          ['サ', 'ウ', 'ナ', 'チ', 'ャ', '〜', '〜', '〜', 'ン', 'ス', '！', '！', '！'],
-          ['今', '日', 'は', '水', '風', '呂', '1', '5', '度', 'の', '気', '分', '.', '.', '.'],
+          'サウナチャンス！！！',
+          'サウナと水風呂の最初のアタッチメントが大事',
+          '深い水風呂に入りたい',
+          'バイブラで冷やされたい',
+          '静かな水風呂に入りたい',
+          '体をよく拭いてからサウナ室に入ろうな！',
+          'サウナ！水風呂！外気浴！',
+          '今日はセルフロウリュウできるサウナに行こうかな',
+          '冬は外気欲が気持ちいいなあ',
+          'サウナ...サウナ...',
+          'サウナ室ではタオルを絞らないでね！',
+          '毎週水曜日は水曜サ活',
+          '外気浴で風になりたい',
+          'サウナチャ〜〜〜ンス！！！',
+          '今日は水風呂15度の気分...',
         ];
 
-        yodare_message.forEach((message, i) => {
+        const yodare_message_element = document.querySelector('.js-YodareMessage');
+
+        // メッセージを表示する
+        function dispYodareMessage() {
+          const random_index = Math.floor(Math.random() * yodare_message.length);
+
           setTimeout(() => {
-            const yodare_message_element = document.querySelector('.js-YodareMessage');
+            yodare_message_element.classList.remove('is-hide');
+            yodare_message_element.classList.add('is-show');
+          }, 600);
+
+          setTimeout(() => {
             yodare_message_element.innerHTML = '';
-            message.forEach((char, j) => {
+
+            for (let i = 0; i < yodare_message[random_index].length; i++) {
+              const span = document.createElement('span');
+              const text = document.createTextNode(yodare_message[random_index][i]);
+              span.appendChild(text);
+              yodare_message_element.appendChild(span);
+            }
+
+            const message_span = yodare_message_element.querySelectorAll('span');
+            message_span.forEach((char, i) => {
               setTimeout(() => {
-                yodare_message_element.innerHTML += '<span class="is-show">' + char + '</span>';
-              }, j * 100);
+                char.classList.add('is-show');
+              }, i * 120);
             });
-          }, i * 5000);
-        });
-        
+          }, 600);
+
+          yodare_message_element.classList.remove('is-show');
+          yodare_message_element.classList.add('is-hide');
+        }
+
+        dispYodareMessage();
+        setInterval(dispYodareMessage, 5000);
       });
     </script>
   </body>
