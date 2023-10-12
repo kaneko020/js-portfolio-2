@@ -252,19 +252,19 @@ a, a:visited {
 }
 
 .uq-topHeroBg_item:first-of-type {
-  /* background-image: url(/assets/img/top/hero1.jpg); */
+  background-image: url(./images/sauna_01.png);
 }
 .uq-topHeroBg_item:nth-of-type(2) {
-  /* background-image: url(/assets/img/top/hero2.jpg); */
+  background-image: url(./images/sauna_02.png);
 }
 .uq-topHeroBg_item:nth-of-type(3) {
-  /* background-image: url(/assets/img/top/hero2.jpg); */
+  background-image: url(./images/sauna_03.png);
 }
 .uq-topHeroBg_item:nth-of-type(4) {
-  /* background-image: url(/assets/img/top/hero2.jpg); */
+  background-image: url(./images/sauna_04.png);
 }
 .uq-topHeroBg_item:nth-of-type(5) {
-  /* background-image: url(/assets/img/top/hero2.jpg); */
+  background-image: url(./images/sauna_05.png);
 }
 
 .uq-topHeroBg_item.is-active {
@@ -481,7 +481,7 @@ a, a:visited {
 
 .uq-topHero_logo {
   z-index: 1000;
-  width: 235px;
+  width: 250px;
 }
 
 .is-introSkip .uq-topHero_typo {

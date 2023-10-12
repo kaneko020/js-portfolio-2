@@ -9,12 +9,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kaneko020.github.io/js-portfolio-2/">
     <meta property="og:title" content="Portfolio2 | サウナイキタイ">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://kaneko020.github.io/js-portfolio-2/images/sauna_ikitai2.png">
     <meta property="og:site_name" content="Portfolio2 | サウナイキタイ">
     <meta property="og:description" content="模写サイト | portfolio | サウナイキタイ" />
     <meta name="twitter:title" content="Portfolio1 | サウナイキタイ">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content="https://kaneko020.github.io/js-portfolio-2/images/sauna_ikitai2.png">
     <meta name="twitter:description" content="模写サイト | portfolio | サウナイキタイ" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -171,7 +171,7 @@
           
           <div class="uq-topHero_logo">
             <div class="uq-topHero_typo">
-              <img src="./images/サウナイキタイ.png" alt="サウナイキタイ">
+              <img src="./images/sauna_ikitai.png" alt="サウナイキタイ">
             </div>
           </div>
 
@@ -186,6 +186,24 @@
     </div>
 
     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const bg_elements = document.querySelectorAll('.js-bg');
+        let index = 1;
+
+        setInterval(() => {
+          bg_elements.forEach((element, i) => {
+            if (index === i) {
+              element.classList.add('is-active', 'is-zoom');
+            } else {
+              element.classList.remove('is-active');
+              setTimeout(() => {
+                element.classList.remove('is-zoom');
+              }, 1000);
+            }
+          });
+          index = (index + 1) % bg_elements.length;
+        }, 5000);
+      });
     </script>
   </body>
 </html>
