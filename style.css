@@ -213,6 +213,10 @@ a, a:visited {
   transition-property: color opacity;
 }
 
+.p-globalNav_link.is-current a:after, .p-globalNav_link a:hover:after {
+  opacity: 1;
+}
+
 .p-actionNav {
   position: absolute;
   top: 17px;
@@ -270,6 +274,21 @@ a, a:visited {
   transition-timing-function: cubic-bezier(.215,.61,.355,1);
   transition-duration: .25s;
   transition-property: all;
+}
+
+.desktop .p-actionNav_link--button a:hover {
+  background: #006dee;
+  text-decoration: none;
+}
+
+.desktop [data-page-id=top] .p-actionNav_link--button a:hover {
+  background: #0051e0;
+  color: #fff;
+}
+
+.p-actionNav_link--login a:hover {
+  text-decoration: none;
+  opacity: .7;
 }
 
 .p-actionNav_link--register {
@@ -695,7 +714,7 @@ a, a:visited {
 .uq-topSearch_keyword .c-formText {
   border: none;
   font-weight: 600;
-  line-height: 58px;
+  line-height: 57px;
   width: 100%;
   height: 60px;
 }

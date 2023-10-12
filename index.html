@@ -196,10 +196,10 @@
           </div>
 
           <div class="uq-topYodare">
-            <div class="uq-topYodare_message js-YodareMessage is-show">
-
+            <div class="uq-topYodare_message js-YodareMessage is-show"></div>
+            <div class="uq-topYodare_character">
+              <img src="./images/yodare.png" alt="よだれ兄弟" decoding="async">
             </div>
-            <div class="uq-topYodare_character"></div>
           </div>
         </div>
       </div>
@@ -209,11 +209,11 @@
       document.addEventListener('DOMContentLoaded', function() {
         // TOPの画像切り替え
         const bg_elements = document.querySelectorAll('.js-bg');
-        let index = 1;
+        let bg_index = 1;
 
         setInterval(() => {
           bg_elements.forEach((element, i) => {
-            if (index === i) {
+            if (bg_index === i) {
               element.classList.add('is-active', 'is-zoom');
             } else {
               element.classList.remove('is-active');
@@ -222,8 +222,30 @@
               }, 1000);
             }
           });
-          index = (index + 1) % bg_elements.length;
+          bg_index = (bg_index + 1) % bg_elements.length;
         }, 5000);
+
+        
+        const yodare_message = [
+          ['サ', 'ウ', 'ナ', 'チ', 'ャ', 'ン', 'ス', '.', '.', '.', '！', '！'],
+          ['サ', 'ウ', 'ナ', 'と', '水', '風', '呂', 'の', '最', '初', 'の', 'ア', 'タ', 'ッ', 'チ', 'メ', 'ン', 'ト', 'が', '大', '事'],
+          ['深', 'い', '水', '風', '呂', 'に', '入', 'り', 'た', 'い'],
+          ['バ', 'イ', 'ブ', 'ラ', 'で', '冷', 'や', 'さ', 'れ', 'た', 'い'],
+          ['静', 'か', 'な', '水', '風', '呂', 'に', '入', 'り', 'た', 'い'],
+          ['体', 'を', 'よ', 'く', '拭', 'い', 'て', 'か', 'ら', 'サ', 'ウ', 'ナ', '室', 'に', '入', 'ろ', 'う', 'な', '！'],
+          ['サ', 'ウ', 'ナ', '！', '水', '風', '呂', '！', '外', '気', '浴', '！'],
+          ['今', '日', 'は', 'セ', 'ル', 'フ', 'ロ', 'ウ', 'リ', 'ュ', 'ウ', 'で', 'き', 'る', 'サ', 'ウ', 'ナ', 'に', '行', 'こ', 'う', 'か', 'な'],
+          ['冬', 'は', '外', '気', '浴', 'が', '気', '持', 'ち', 'い', 'い', 'な', 'あ'],
+          ['サ', 'ウ', 'ナ', '.', '.', '.', 'サ', 'ウ', 'ナ', '.', '.', '.'],
+          ['サ', 'ウ', 'ナ', '室', 'で', 'は', 'タ', 'オ', 'ル', 'を', '絞', 'ら', 'な', 'い', 'で', 'ね', '！'],
+          ['毎', '週', '水', '曜', '日', 'は', '水', '曜', 'サ', '活'],
+          ['外', '気', '浴', 'で', '風', 'に', 'な', 'り', 'た', 'い'],
+          ['サ', 'ウ', 'ナ', 'チ', 'ャ', '〜', '〜', '〜', 'ン', 'ス', '！', '！', '！'],
+          ['今', '日', 'は', '水', '風', '呂', '1', '5', '度', 'の', '気', '分', '.', '.', '.'],
+        ];
+
+        
+        
       });
     </script>
   </body>
