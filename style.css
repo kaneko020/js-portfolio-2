@@ -808,6 +808,24 @@ a, a:visited {
   margin-top: -2px;
 }
 
+.uq-topHero_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0051e0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
+  animation-timing-function: cubic-bezier(.215,.61,.355,1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
 .is-introSkip .uq-topHero_overlay {
   opacity: 0;
 }

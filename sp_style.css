@@ -1,4 +1,11 @@
 @media only screen and (max-width: 799px) {
+  body {
+    position: relative;
+    background: none;
+    background: #fff;
+    font-size: 14px;
+  }
+
   .l-page {
     overflow: inherit;
     width: 100%;
@@ -348,4 +355,306 @@
   .uq-topInformationItem_date {
     margin-right: 10px;
   }
+
+  .l-containers {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: auto;
+    margin-bottom: 0;
+  }
+
+  .p-sakatsu {
+    width: 100%;
+  }
+
+  .p-headlineHeader {
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+
+  .c-headline--lv1 {
+    margin: 0 0 10px;
+  }
+
+  .p-headlineHeader .c-headline {
+    float: none;
+  }
+
+  .c-headline--lv1 .c-headline_string {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .c-lead {
+    font-size: 13px;
+  }
+
+  .c-headline+p.c-lead {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .p-headlineHeader .c-headline+.c-lead {
+    top: 0;
+    margin-top: 5px;
+  }
+
+  .p-sakatsu_content {
+    display: block;
+  }
+
+  .p-sakatsu_sub {
+    width: calc(100% - 40px);
+    margin: auto;
+  }
+
+  .u-desktopBlock {
+    display: none;
+  }
+
+  .p-sakatsuUse {
+    border: 2px solid #0051e0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: none;
+  }
+
+  .p-sakatsuUse_headline span {
+    font-size: 16px;
+  }
+
+  .p-sakatsuUse_body {
+    display: none;
+  }
+
+  .p-sakatsuUse_headline+.p-sakatsuUse_body {
+    margin-top: 15px;
+  }
+
+  .p-sakatsuUse_body span {
+    font-size: 12px;
+  }
+
+  .p-sakatsu_main {
+    width: 100%;
+  }
+
+  .p-sakatsu .l-content {
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  .p-sakatsu_main .l-content {
+    margin-bottom: 0;
+  }
+
+  .p-postCardList {
+    display: block;
+    box-sizing: border-box;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  .p-sakatsu_main .p-postCardList {
+    border-top: 1px solid #eee;
+  }
+
+  .p-postCard_inner {
+    padding: 15px 20px 45px;
+  }
+
+  .is-temperature .p-postCard_inner {
+    padding-bottom: 75px;
+  }
+
+  .p-postCard_header {
+    width: 30px;
+  }
+
+  .p-postCard_icon {
+    height: 30px;
+  }
+
+  .p-postCard_content {
+    width: calc(100% - 40px);
+  }
+
+  .p-postCardUser {
+    margin-bottom: 5px;
+  }
+
+  .p-postCardUser_contents {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+
+  .p-postCardUser_name {
+    font-size: 14px;
+    margin-bottom: -3px;
+  }
+
+  .p-postCardUser_date {
+    font-size: 10px;
+  }
+
+  .p-postCardUser_counter {
+    font-size: 10px;
+    margin-right: 5px;
+  }
+
+  .p-postCard_facility {
+    font-size: 14px;
+  }
+
+  .p-postCard_address {
+    font-size: 10px;
+  }
+
+  .p-postCard_text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .p-postCard_image img {
+    max-width: 100%;
+  }
+
+  .p-postCardFood {
+    border-radius: 6px;
+    padding: 15px;
+  }
+
+  .p-postCardList .p-postCardFood {
+    margin: 10px 0 0;
+    padding: 10px;
+  }
+
+  .p-postCardList .p-postCardFood_image {
+    width: 45%;
+    margin: 0 10px 0 0;
+  }
+
+  .p-postCardList .p-postCardFood_body {
+    width: 55%;
+  }
+
+  .p-postCardFood_restaurant {
+    font-size: 10px;
+  }
+
+  .p-postCardList .p-postCardFood_restaurant {
+    font-size: 10px;
+    margin-bottom: 3px;
+  }
+
+  .p-postCardFood_title {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .p-postCardFood_description {
+    font-size: 14px;
+  }
+
+  .p-postCardList .p-postCardFood_description {
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .p-postCard_readmore {
+    left: 20px;
+    bottom: 34px;
+    width: calc(100% - 40px);
+    padding: 20px 0 10px;
+  }
+
+  .p-postCardAction {
+    margin: 10px 0;
+  }
+
+  .p-postCardAction.is-mini {
+    left: 60px;
+    padding: 0;
+  }
+
+  .is-mini .p-postCardAction_item.is-comment span {
+    top: -1px;
+  }
+
+  .p-saunaItemSpec {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .p-postCard .p-saunaItemSpec {
+    bottom: 40px;
+    left: 60px;
+    display: flex;
+  }
+
+  .p-saunaItemSpec_content {
+    margin-right: 0;
+    margin-bottom: 1px;
+  }
+
+  .p-postCard .p-saunaItemSpec_content {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .p-saunaItemSpec_headline {
+    position: relative;
+    top: 1px;
+    border-radius: 4px;
+    font-size: 8px;
+    line-height: 14px;
+    text-align: center;
+    width: 24px;
+    height: 14px;
+    margin-right: 5px;
+    padding: 0;
+  }
+
+  .p-postCard .p-saunaItemSpec_headline {
+    border-radius: 8px;
+    font-size: 9px;
+    line-height: 15px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .p-saunaItemSpec_items {
+    top: 0px;
+  }
+
+  .p-saunaItemSpec_item {
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
+
+  .p-saunaItemSpec_icon {
+    top: 1px;
+    font-size: 8px;
+    line-height: 14px;
+    width: 14px;
+    height: 14px;
+    margin-right: 3px;
+  }
+
+  .p-postCard .p-saunaItemSpec_icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .p-saunaItemSpec_value {
+    font-size: 12px;
+    top: 0;
+  }
+
+  .p-postCard .p-saunaItemSpec_value {
+    top: 1px;
+  }
+
 }
