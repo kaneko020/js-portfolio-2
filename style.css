@@ -1703,3 +1703,49 @@ a, a:visited {
   transition-duration: .3s;
   transition-property: opacity transform height;
 }
+
+.uq-topPickupBanner {
+  width: 1100px;
+  margin: 10px auto 70px;
+}
+
+.p-headlineHeader {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.p-headlineHeader .c-headline {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.uq-topPickupBanner_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.uq-topPickupBanner_item {
+  margin-bottom: 20px;
+}
+
+.is-grid3 .uq-topPickupBanner_item {
+  width: 348px;
+}
+
+.uq-topPickupBanner_item a {
+  border-radius: 16px;
+  display: block;
+  overflow: hidden;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .3s;
+  transition-property: all;
+}
+
+.uq-topPickupBanner_item a img {
+  width: 100%;
+  height: auto;
+}
+
