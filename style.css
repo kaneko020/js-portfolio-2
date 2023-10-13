@@ -1207,6 +1207,10 @@ a, a:visited {
   cursor: pointer;
 }
 
+.is-temperature .p-postCard_inner {
+  padding-bottom: 80px;
+}
+
 .p-postCard_header {
   width: 40px;
 }
@@ -1440,8 +1444,17 @@ a, a:visited {
   transition-property: opacity;
 }
 
+.is-temperature .p-postCard_readmore {
+  padding-bottom: 40px;
+}
+
 .is-readmore .p-postCard_readmore {
   display: block;
+}
+
+.is-read .p-postCard_readmore {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .p-postCard_readmore span {
@@ -1477,6 +1490,90 @@ a, a:visited {
   text-decoration: none;
   text-transform: none;
   content: "\f078";
+}
+
+.p-saunaItemSpec {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  margin: 0 0 5px;
+}
+
+.p-postCard .p-saunaItemSpec {
+  position: absolute;
+  bottom: 40px;
+  left: 95px;
+}
+
+.p-saunaItemSpec_content {
+  display: flex;
+  align-items: center;
+  font-size: 0;
+  margin: 0 15px 0 0;
+}
+
+.p-saunaItemSpec_content:last-of-type {
+  margin: 0;
+}
+
+.p-saunaItemSpec_headline {
+  border-radius: 6px;
+  background: #0051e0;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+  height: 18px;
+  margin: 0 7px 0 0;
+  padding: 0 10px;
+}
+
+.p-saunaItemSpec_content--man .p-saunaItemSpec_headline {
+  background: #0051e0;
+}
+
+.p-saunaItemSpec_content--woman .p-saunaItemSpec_headline {
+  background: #ef0d0d;
+}
+
+.p-saunaItemSpec_items {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.p-saunaItemSpec_item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 0 15px 0 0;
+  list-style: none;
+}
+
+.p-saunaItemSpec_icon {
+  position: relative;
+  border-radius: 50%;
+  background: #888;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.p-saunaItemSpec_value {
+  position: relative;
+  top: 0;
+  font-size: 14px;
+  margin-right: 2px;
+  font-family: Inter;
+  font-style: normal;
 }
 
 .p-postCardAction {
