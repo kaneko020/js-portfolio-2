@@ -236,6 +236,7 @@
           </div>
 
           <div class="p-sakatsu_content">
+            <!-- サイド -->
             <div class="p-sakatsu_sub">
               <div class="p-sakatsuUse u-desktopBlock">
                 <h3 class="p-sakatsuUse_headline js-information">
@@ -248,6 +249,106 @@
                   </p>
                   <span>\　統計情報もチェックできる　/</span>
                   <img src="" alt="サ活レポート" decoding="async">
+                </div>
+              </div>
+            </div>
+
+            <!-- 口コミ -->
+            <div class="p-sakatsu_main">
+              <div class="l-content">
+                <div class="p-postCardList">
+                  <!-- 投稿 -->
+                  <div class="p-postCard js-postCard is-temperature is-readmore">
+                    <div class="p-postCard_inner">
+                      <div class="p-postCard_header">
+                        <div class="p-postCard_icon">
+                          <a href="#">
+                            <img src="./images/user_icon1.jpeg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="p-postCard_content">
+                        <div class="p-postCardUser">
+                          <div class="p-postCardUser_contents">
+                            <div class="p-postCardUser_content">
+                              <p class="p-postCardUser_name">
+                                <a href="#">
+                                  オールドルーキーサウナ秋葉原オープン待ち
+                                </a>
+                              </p>
+                              <p class="p-postCardUser_date">
+                                2023.10.13
+                              </p>
+                              <p class="p-postCardUser_counter">902回目の訪問</p>
+                              <p class="p-postCard_tag">
+                                <a href="#" target="_blank">サウナ飯</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="p-postCard_body">
+                          <div class="p-postCard_facilityData">
+                            <strong class="p-postCard_facility">
+                              <a href="#">
+                                SPA大手町 FITNESS CLUB
+                              </a>
+                              <p class="p-postCard_address">[ 東京都 ]</p>
+                            </strong>
+                          </div>
+                          <a class="js-postCardLink" href="#"></a>
+                          <p class="p-postCard_text">
+                            金朝大手町
+                          </p>
+                          <div class="p-postCard_image">
+                            <img src="./images/post_img1.jpeg" alt="">
+                          </div>
+                          <div class="p-postCardFood">
+                            <div class="p-postCardFood_content">
+                              <div class="p-postCardFood_image">
+                                <img src="./images/post_img2.jpeg" alt="">
+                              </div>
+                              <div class="p-postCardFood_body">
+                                <div class="p-postCardFood_meta">
+                                  <p class="p-postCardFood_restaurant">
+                                    <a class="js-restaurantLink" href="#" target="_blank">
+                                      AMERICAN
+                                    </a>
+                                  </p>
+                                  <h2 class="p-postCardFood_title">
+                                    あんこサンド
+                                  </h2>
+                                  <div class="p-postCardFood_description">
+                                    <p></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-postCard_readmore">
+                      <span class="js-readmore">続きを読む</span>
+                    </div>
+
+                    <div class="p-postCardAction is-mini">
+                      <div class="p-postCardAction_item is-like js-like" data-action="login" data-sakatsu-id="4608322">
+                        <span class="js-likeCount">1</span>
+                      </div>
+                      <div class="p-postCardAction_item is-comment">
+                        <a href="#">
+                          <span class="js-commentCount">0</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-sakatsu_more">
+                  <div class="c-button">
+                      <a href="#">もっと見る</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -330,6 +431,15 @@
 
         dispYodareMessage();
         setInterval(dispYodareMessage, 5000);
+
+        // js-readmoreがクリックされたらis-readmoreを削除する
+        const readmore_elements = document.querySelectorAll('.js-readmore');
+        readmore_elements.forEach((element) => {
+          element.addEventListener('click', () => {
+            element.closest('.js-postCard').classList.remove('is-readmore');
+            element.closest('.js-postCard').classList.add('is-read');
+          });
+        });
       });
     </script>
   </body>
