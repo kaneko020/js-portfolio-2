@@ -304,4 +304,48 @@
   .uq-topYodare_character {
     width: 90px;
   }
+
+  .uq-topIonwater {
+    right: 20px;
+    bottom: -35px;
+    display: block;
+    text-align: left;
+  }
+
+  .uq-topIonwater_sponsord {
+    font-size: 6px;
+    margin-bottom: 0;
+  }
+
+  .uq-topIonwater_logo {
+    width: 110px;
+  }
+
+  .uq-topIonwater_logo img {
+    width: 100%;
+    height: auto;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .uq-topInformation {
+    bottom: -120px;
+    left: 0;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 0 0 20px;
+  }
+
+  .uq-topInformation_content {
+    margin-right: 20px;
+  }
+
+  .uq-topInformationItem {
+    font-size: 12px;
+  }
+
+  .uq-topInformationItem_date {
+    margin-right: 10px;
+  }
 }

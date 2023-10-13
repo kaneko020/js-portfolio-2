@@ -959,3 +959,68 @@ a, a:visited {
   width: 100%;
   height: auto;
 }
+
+.uq-topIonwater {
+  position: absolute;
+  right: 30px;
+  bottom: -35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00b2d7;
+}
+
+.uq-topIonwater_sponsord {
+  position: relative;
+  top: 2px;
+  font-size: 9px;
+  font-weight: 300;
+  line-height: 1;
+  margin-right: 10px;
+}
+
+.uq-topIonwater_logo {
+  line-height: 1;
+  width: 153px;
+}
+
+.uq-topIonwater_logo img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.uq-topInformation {
+  position: absolute;
+  left: 30px;
+  box-sizing: border-box;
+  margin: auto auto 40px;
+}
+
+.uq-topInformation_content {
+  padding: 20px 0;
+}
+
+.uq-topInformationItem {
+  display: flex;
+  font-size: 14px;
+}
+
+.uq-topInformationItem_date {
+  font-weight: 700;
+  letter-spacing: .02em;
+  margin-right: 15px;
+}
+
+.uq-topInformationItem a {
+  position: relative;
+  border-radius: 4px;
+  border-radius: 30px;
+  display: block;
+  font-weight: 600;
+  color: #0051e0;
+  text-align: left;
+  text-decoration: none;
+}
+
