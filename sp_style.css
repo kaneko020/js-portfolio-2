@@ -336,7 +336,7 @@
   }
 
   .uq-topInformation {
-    bottom: -120px;
+    bottom: -100px;
     left: 0;
     font-size: 14px;
     width: 100%;
@@ -594,7 +594,7 @@
 
   .p-saunaItemSpec_content {
     margin-right: 0;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
   }
 
   .p-postCard .p-saunaItemSpec_content {
@@ -655,6 +655,505 @@
 
   .p-postCard .p-saunaItemSpec_value {
     top: 1px;
+  }
+
+  .p-sakatsu_more {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .c-button {
+    display: block;
+  }
+
+  .c-button a, .c-button button {
+    font-size: 14px;
+    padding: 14px 0;
+  }
+
+  .uq-topPickupBanner {
+    width: calc(100% - 40px);
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .uq-topPickupBanner .p-headlineHeader {
+    padding: 0;
+  }
+
+  .uq-topPickupBanner_item {
+    margin-bottom: 10px;
+  }
+
+  .uq-topPickupBanner_item a {
+    border-radius: 12px;
+  }
+
+  .uq-toplottery {
+    width: 100%;
+    background: #f3f3f3;
+    margin-bottom: 40px;
+    padding-top: 45px;
+    padding-bottom: 10px;
+  }
+
+  .p-goodsList {
+    background: #f3f3f3;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 60px 20px 40px;
+  }
+
+  .uq-toplottery .p-goodsList {
+    padding-top: 0;
+  }
+
+  .p-goodsCard {
+    border-radius: 8px;
+    width: calc(50% - 5px);
+    margin-bottom: 5px;
+  }
+
+  .p-goodsCard_image {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .is-sauna .p-goodsCard_image img {
+    top: 10px;
+  }
+
+  .p-goodsCard_tag {
+    top: 10px;
+    left: 10px;
+    border-radius: 2px;
+    font-size: 7px;
+    padding: 3px 6px;
+  }
+
+  .p-goodsCard_content {
+    padding: 10px 0;
+  }
+
+  .p-goodsCardTitle {
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+  }
+
+  .p-goodsCardTitle_item {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+  .p-goodsCardTitle_name {
+    font-size: 9px;
+  }
+
+  .p-goodsCard_body {
+    margin-bottom: 15px;
+    padding: 0 10px;
+  }
+
+  .p-goodsCardTonttu_count {
+    font-size: 22px;
+    padding-left: 18px;
+  }
+
+  .p-goodsCardTonttu_count:before {
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 20px;
+  }
+
+  .p-goodsCardWin p {
+    font-size: 15px;
+  }
+
+  .p-goodsCardFooter {
+    padding: 6px 10px 0;
+  }
+
+  .p-goodsCardFooter_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .p-goodsCardState_list {
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .p-goodsCardState_list p {
+    font-size: 12px;
+    margin: 0 3px;
+  }
+
+  .p-goodsCardState_list:first-of-type:after {
+    position: relative;
+    top: -1px;
+    content: "/";
+    color: #888;
+    margin: 0 5px;
+  }
+
+  .uq-topSauna {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .p-saunaList {
+    width: calc(100% + 40px);
+    margin-top: 0;
+    margin-left: -20px;
+  }
+
+  .p-saunaList--grid {
+    border-bottom: 0;
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .uq-topSauna .p-saunaList {
+    padding-left: 20px;
+  }
+
+  .p-saunaList_content {
+    width: 1080px;
+  }
+
+  .p-saunaList--grid .p-saunaList_content {
+    justify-content: flex-start;
+  }
+
+  .p-saunaItem.p-saunaItem--grid {
+    width: 250px;
+    margin-right: 10px;
+  }
+
+  .uq-topSauna .p-saunaItem:first-of-type {
+    margin-top: 0;
+  }
+
+  .p-saunaItem>a {
+    background: none;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+
+  .p-saunaItem.p-saunaItem--grid>a {
+    border: 1px solid #f3f3f3;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .p-saunaItem_image {
+    top: 0;
+    height: auto;
+    width: 38%;
+    min-height: 58px;
+    margin: 0 15px 0 0;
+  }
+
+  .p-saunaItem_image img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .p-saunaItem_header {
+    left: 0;
+    width: 100%;
+  }
+
+  .p-saunaItemOpenday {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  .p-saunaItem--grid .p-saunaItem_name {
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+
+  .p-saunaItem_data {
+    top: -4px;
+    width: 62%;
+  }
+
+  .p-saunaItemSpec {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .p-saunaItem--grid .p-saunaItemSpec {
+    margin-bottom: 5px;
+  }
+
+  .p-saunaItem--grid .p-saunaItemSpec_headline {
+    width: 13px;
+    height: 13px;
+    line-height: 14px;
+  }
+
+  .p-saunaItem--grid .p-saunaItemSpec_icon {
+    line-height: 14px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .p-saunaItem--grid .p-saunaItemSpec_value {
+    top: -2px!important;
+  }
+
+  .p-saunaItemSpec_value>img {
+    top: -3px;
+    width: 12px;
+  }
+
+  .uq-topSaunaMore {
+    padding: 0 20px;
+  }
+
+  .uq-topSauna .c-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .uq-topSaunaMore_future {
+    margin-top: 20px;
+  }
+
+  .p-wanted {
+    border-radius: 12px;
+    background-position: 50%;
+    width: calc(100% - 40px);
+    height: 250px;
+    margin-bottom: 50px;
+  }
+ 
+  .p-wanted_content {
+    display: block;
+    padding: 0 30px;
+  }
+
+  .p-wantedHeadline {
+    margin-bottom: 10px;
+  }
+
+  .p-wantedHeadline_en {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .p-wantedComplete_text {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .p-wantedComplete_remaining {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .p-wantedComplete_remaining strong {
+    font-size: 40px;
+    margin: 0 5px;
+  }
+
+  .p-wantedComplete .c-button a {
+    display: block;
+    padding: 14px 40px;
+  }
+
+  .p-storeGoods {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+
+  .uq-topStoreGoods {
+    margin-bottom: 60px;
+  }
+
+  .p-storeGoodsList {
+    margin-bottom: 0;
+  }
+
+  .p-storeGoodsCard {
+    width: calc(50% - 5px);
+    margin-bottom: 20px;
+  }
+
+  .p-storeGoodsCard_name {
+    font-size: 12px;
+  }
+
+  .p-storeGoodsCard:last-of-type {
+    display: none;
+  }
+
+  .uq-topMagazine {
+    background: #f8f8f8;
+    margin-bottom: 40px;
+  }
+
+  .uq-topMagazine_content {
+    width: 100%;
+    padding: 40px 0 50px;
+  }
+
+  .p-saunaCardList {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .uq-topMagazine .p-saunaCardList {
+    border-top: 1px solid #eee;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  .p-saunaCard {
+    width: 100%;
+    margin: 0;
+  }
+
+  .p-saunaCard a {
+    border-bottom: 1px solid #eee;
+    display: flex;
+    padding: 20px 0;
+  }
+
+  .p-saunaCard_image {
+    border-radius: 12px;
+    width: 40%;
+    margin-bottom: 0;
+  }
+
+  .p-saunaCard_image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .p-saunaCard_body {
+    box-sizing: border-box;
+    width: 60%;
+    margin-top: -4px;
+    padding: 0 0 0 15px;
+  }
+
+  .p-saunaCard_title {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  .p-saunaCard_date {
+    font-size: 12px;
+  }
+
+  .uq-topMagazine_more {
+    padding: 0 20px;
+  }
+
+  .uq-topMagazine .c-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .uq-topNews {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .uq-topNews .l-content {
+    border-top: 1px solid #eee;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .uq-topNews .p-news_content {
+    padding: 20px;
+    height: 240px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .p-news_list {
+    display: block;
+  }
+
+  .p-banner {
+    width: 100%;
+    margin: 20px auto 50px;
+    padding: 0 20px;
+  }
+
+  .p-banner_item {
+    float: none;
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  
+  .p-banner_item a {
+    border-radius: 12px;
+  }
+
+  .p-banner_item:nth-of-type(3n) {
+    margin-bottom: 0;
+  }
+
+  .uq-topGoods {
+    width: 100%;
+    border-radius: 0;
+    background-image: url(./images/goods_sp.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 568px;
+    margin-bottom: 0;
+  }
+
+  .uq-topGoods_content {
+    width: 100%;
+  }
+
+  .uq-topGoods_headline {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+
+  .uq-topGoods_description {
+    font-size: 14px;
+  }
+
+  .uq-topGoods .c-button {
+    display: block;
+    box-sizing: border-box;
+    width: 240px;
+    padding: 14px 0;
+  }
+
+  .c-loading_content {
+    margin-top: -40px;
+    margin-left: 0;
+  }
+
+  .c-loading_icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .c-loading_icon img {
+    width: 100px;
+    margin-left: 0;
   }
 
 }

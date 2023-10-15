@@ -1,9 +1,20 @@
 @charset "UTF-8";
 
-a, body, div, h1, h2, h3, h4, img, input, li, p, section, select, span, textarea, ul {
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+  border: 0;
+  background: transparent;
+  font-size: 100%;
+  vertical-align: baseline;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  outline: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-smoothing: antialiased; */
 }
 
 body {
@@ -49,9 +60,21 @@ p {
   line-height: 1.8;
 }
 
+a {
+  background: transparent;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: none;
+}
+
 a, a:visited {
   color: #222;
   cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .l-page {
@@ -201,6 +224,10 @@ a, a:visited {
   box-sizing: border-box;
   font-weight: 600;
   padding: 10px 0;
+}
+
+.p-globalNav_link a:hover {
+  text-decoration: none;
 }
 
 .p-globalNav_link a:after {
@@ -679,6 +706,7 @@ a, a:visited {
   color: #0051e0;
   text-decoration: none;
 }
+
 .uq-topSearch_tab a {
   position: relative;
   display: block;
@@ -1194,6 +1222,11 @@ a, a:visited {
   text-decoration: underline;
 }
 
+.desktop .l-content a:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+
 .p-postCardList {
   position: relative;
 }
@@ -1223,6 +1256,10 @@ a, a:visited {
   width: 100%;
   padding: 20px 40px 50px;
   cursor: pointer;
+}
+
+.desktop .p-postCard_inner:hover {
+  background: #f9f9f9;
 }
 
 .is-temperature .p-postCard_inner {
@@ -1704,20 +1741,15 @@ a, a:visited {
   transition-property: opacity transform height;
 }
 
+.desktop .c-button a:hover, .desktop .c-button button:hover {
+  text-decoration: none;
+  opacity: .8;
+  cursor: pointer;
+}
+
 .uq-topPickupBanner {
   width: 1100px;
   margin: 10px auto 70px;
-}
-
-.p-headlineHeader {
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-.p-headlineHeader .c-headline {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 0;
 }
 
 .uq-topPickupBanner_content {
@@ -1749,3 +1781,851 @@ a, a:visited {
   height: auto;
 }
 
+.uq-toplottery {
+  margin-bottom: 100px;
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-goodsList {
+  position: relative;
+  width: 1100px;
+  margin: auto;
+}
+
+.p-goodsList_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.p-goodsCard {
+  position: relative;
+  border-radius: 16px;
+  background: #fff;
+  z-index: 0;
+  overflow: hidden;
+  width: 23.0909090909%;
+  margin-bottom: 21px;
+}
+
+.p-goodsCard a {
+  display: block;
+}
+
+.p-goodsCard_image {
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+.p-goodsCard_image img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.is-sauna .p-goodsCard_image img {
+  top: 15px;
+}
+
+.p-goodsCard_tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 4px;
+  background: #333;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  color: #0051e0;
+  color: #fff;
+  padding: 4px 8px;
+}
+
+.p-goodsCard_content {
+  padding: 20px 0 0;
+}
+
+.p-goodsCardTitle {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.p-goodsCardTitle_name {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #888;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.p-goodsCardTitle_item {
+  display: block;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.uq-toplottery .p-goodsList .p-goodsCardTitle_item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.p-goodsCard_body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.p-goodsCardTonttu_count {
+  display: block;
+  margin-bottom: -5px;
+  position: relative;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  padding-left: 30px;
+}
+
+.p-goodsCardTonttu_count:before {
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  background: url(./images/tonttu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+}
+
+.p-goodsCardWin {
+  position: relative;
+  top: 2px;
+  border-radius: 30px;
+  background: #0051e0;
+  display: flex;
+  align-items: baseline;
+  font-size: 10px;
+  line-height: 1;
+  color: #fff;
+  padding: 4px 10px 6px;
+}
+
+.p-goodsCardWin p {
+  position: relative;
+  top: 1px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 3px;
+}
+
+.p-goodsCardFooter {
+  position: relative;
+  border-top: 1px solid #f3f3f3;
+  background: #f9f9f9;
+  background: #fff;
+  padding: 10px 20px 14px;
+}
+
+.p-goodsCardState {
+  position: relative;
+}
+
+.p-goodsCardState_lists {
+  line-height: 1;
+}
+
+.p-goodsCardState_list {
+  display: inline;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.p-goodsCardState_list p {
+  display: inline-block;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: #0051e0;
+  text-align: right;
+  margin: 0 3px 0 10px;
+}
+
+.p-goodsCardState_list:first-of-type:after {
+  position: relative;
+  top: -1px;
+  content: "/";
+  color: #888;
+  margin: 0 5px;
+}
+
+.p-goodsCardState_list:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.uq-toplottery_more {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.uq-topSauna {
+  margin-bottom: 80px;
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-saunaList {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 35px;
+}
+
+.p-saunaList--grid {
+  width: calc(100% + 10px);
+  border-bottom: none;
+  margin-bottom: -60px;
+}
+
+.uq-topSauna .p-saunaList {
+  margin-bottom: 0;
+  border: none;
+}
+
+.p-saunaList_content {
+  width: auto;
+}
+
+.p-saunaList--grid .p-saunaList_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.p-saunaItem {
+  position: relative;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  z-index: 1;
+  padding: 20px 0;
+}
+
+.p-saunaItem.p-saunaItem--grid {
+  border-bottom: 0;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 23.0909090909%;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.uq-topSauna .p-saunaList .p-saunaItem.p-saunaItem--grid {
+  margin-bottom: 0;
+}
+
+.p-saunaItem>a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 1;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .3s;
+  transition-property: opacity transform height;
+}
+
+.p-saunaItem.p-saunaItem--grid>a {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+}
+
+.p-saunaItem_image {
+  position: relative;
+  top: -65px;
+  width: 20.2380952381%;
+  height: 154px;
+  min-height: 116px;
+  margin: 0 30px -65px 0;
+}
+
+.p-saunaItem--grid .p-saunaItem_image {
+  top: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.p-saunaItem_image:before {
+  display: block;
+  content: "";
+  padding-top: 75%;
+}
+
+.p-saunaItem_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.p-saunaItem_content {
+  display: flex;
+  width: 100%;
+}
+
+.p-saunaItem--grid .p-saunaItem_content {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.p-saunaItem_header {
+  position: relative;
+  left: 234px;
+  width: 76.1904761905%;
+}
+
+.p-saunaItem--grid .p-saunaItem_header {
+  left: 0;
+  width: 100%;
+}
+
+.p-saunaItemOpenday {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #0051e0;
+}
+
+.p-saunaItem--grid .p-saunaItemOpenday {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.p-saunaItem--grid .p-saunaItem_name {
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.p-saunaItem_data {
+  position: relative;
+  top: -6px;
+  width: 76.1904761905%;
+}
+
+.p-saunaItem--grid .p-saunaItem_data {
+  top: 0;
+  width: 100%;
+}
+
+.p-saunaItem--grid .p-saunaItemSpec {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.p-saunaItem--grid .p-saunaItemSpec_content {
+  margin-right: 0;
+}
+
+.p-saunaItemSpec_content--unisex .p-saunaItemSpec_headline {
+  background: #555;
+}
+
+.p-saunaItem--grid .p-saunaItemSpec_headline {
+  position: relative;
+  top: -1px!important;
+  border-radius: 12px;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.p-saunaItem--grid .p-saunaItemSpec_item {
+  font-size: 10px;
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+
+.p-saunaItem--grid .p-saunaItemSpec_icon {
+  top: -1px!important;
+  font-size: 10px;
+  line-height: 16px;
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
+
+.p-saunaItem--grid .p-saunaItemSpec_value {
+  top: -1px!important;
+  font-size: 12px;
+}
+
+.p-saunaItemSpec_value>img {
+  position: relative;
+  top: -3px;
+  width: 13px;
+  height: auto;
+}
+
+.p-saunaItemSpec_item:last-of-type {
+  margin-right: 0;
+}
+
+.uq-topSaunaMore {
+  text-align: center;
+}
+
+.uq-topSauna .c-button {
+  margin-top: 40px;
+}
+
+.uq-topSauna .c-button a {
+  display: block;
+}
+
+.uq-topSaunaMore_future {
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.uq-topSaunaMore_future a {
+  padding: 20px 0;
+  color: #888;
+}
+
+.p-wanted {
+  border-radius: 16px;
+  background-image: url(./images/wanted.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  width: 1100px;
+  height: 420px;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-left: auto;
+}
+
+.p-wanted_content {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%
+}
+
+.p-wantedHeadline_en {
+  display: block;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.p-wantedComplete {
+  text-align: center;
+}
+
+.p-wantedComplete_text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .05em;
+  margin-bottom: 10px;
+}
+
+.p-wantedComplete_remaining {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .05em;
+  margin-bottom: 40px;
+}
+
+.p-wantedComplete_remaining strong {
+  font-family: Montserrat;
+  font-size: 56px;
+}
+
+.p-wantedComplete .c-button a {
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
+  padding: 8px 50px;
+}
+
+.p-storeGoods {
+  position: relative;
+  box-sizing: border-box;
+  width: 1100px;
+  margin: 40px auto;
+}
+
+.uq-topStoreGoods {
+  margin-bottom: 80px;
+}
+
+.uq-topStoreGoods .p-headlineHeader {
+  padding: 0;
+}
+
+.p-storeGoodsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.p-storeGoodsCard {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  width: 17.8181818182%;
+  margin-bottom: 21px;
+}
+
+.p-storeGoodsCard a {
+  display: block;
+  text-decoration: none;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .3s;
+  transition-property: all;
+}
+
+.p-storeGoodsCard_image {
+  margin-bottom: 10px;
+}
+
+.p-storeGoodsCard_image img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.p-storeGoodsCard_name {
+  font-size: 14px;
+}
+
+.uq-toplottery_more {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.uq-topMagazine {
+  background: #fff;
+  box-sizing: border-box;
+  margin-bottom: 85px;
+}
+
+.uq-topMagazine_content {
+  padding: 90px 0;
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-saunaCardList {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.uq-topMagazine .p-saunaCardList {
+  margin-bottom: 0;
+}
+
+.p-saunaCard {
+  position: relative;
+  text-align: left;
+  width: 348px;
+  margin: 0 0 40px;
+}
+
+.uq-topMagazine .p-saunaCardList .p-saunaCard {
+  margin-bottom: 0;
+}
+
+.p-saunaCard a {
+  display: block;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .3s;
+  transition-property: all;
+}
+
+.p-saunaCard a:hover {
+  text-decoration: none;
+}
+
+.p-saunaCard_image {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.p-saunaCard_image img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.p-saunaCard_image img {
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .3s;
+  transition-property: all;
+}
+
+.p-saunaCard_title {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.p-saunaCard_date {
+  font-size: 12px;
+}
+
+.uq-topMagazine_more {
+  text-align: center;
+}
+
+.uq-topMagazine .c-button {
+  margin-top: 20px;
+}
+
+.uq-topNews {
+  margin-bottom: 80px;
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c-lead a {
+  text-decoration: underline;
+}
+
+.uq-topNews .l-content {
+  padding: 40px;
+}
+
+.uq-topNews .p-news_content::-webkit-scrollbar {
+  position: relative;
+  width: 3px;
+}
+
+.uq-topNews .p-news_content::-webkit-scrollbar-thumb {
+  background: #575757;
+  background: #0051e0;
+  box-shadow: none;
+}
+
+.uq-topNews .p-news_content::-webkit-scrollbar-track {
+  border: 2px solid #ddd;
+}
+
+.uq-topNews .p-news_content {
+  position: relative;
+  overflow-y: scroll;
+  height: 290px;
+  padding-right: 40px;
+}
+
+.p-news_list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.p-news_date {
+  margin: 0 30px 0 0;
+  color: #888;
+}
+
+.p-news_list a {
+  text-decoration: none;
+}
+
+.p-news_list:last-child {
+  margin-bottom: 0;
+}
+
+.p-banner {
+  box-sizing: border-box;
+  width: 1100px;
+  margin: 0 auto 60px;
+}
+
+.p-banner_content {
+  overflow: hidden;
+  margin-bottom: -20px;
+}
+
+.p-banner_item {
+  float: left;
+  width: 348px;
+  margin: 0 22px 22px 0;
+}
+
+.p-banner_item a {
+  border-radius: 16px;
+  display: block;
+  overflow: hidden;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .3s;
+  transition-property: all;
+  box-sizing: border-box;
+}
+
+.p-banner_item img {
+  width: 100%;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.p-banner_item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.uq-topGoods {
+  border-radius: 16px;
+  background-image: url(./images/goods.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 510px;
+  margin-bottom: 80px;
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.uq-topGoods_content {
+  color: #fff;
+  text-align: center;
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.uq-topGoods_headline {
+  display: block;
+  font-family: Montserrat;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: .1em;
+  margin-bottom: 25px;
+}
+
+.uq-topGoods_description {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  margin-bottom: 30px;
+}
+
+.uq-topGoods .c-button a {
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
+  padding: 8px 50px;
+}
+
+.c-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: hsla(0,0%,100%,.9);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .35s;
+  transition-property: all;
+}
+
+.c-loading_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c-loading_icon {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+}
+
+.c-loading_icon img {
+  width: 140px;
+  height: auto;
+  margin-bottom: -20px;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+  .uq-topPickupBanner_item a:hover {
+    opacity: .75;
+  }
+
+  .p-storeGoodsCard a:hover {
+    opacity: .7;
+  }
+
+  .p-saunaCard a:hover {
+    opacity: .7;
+  }
+}
