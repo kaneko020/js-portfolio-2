@@ -182,11 +182,14 @@
   }
 
   .p-menuNav_link--button>a {
-    padding: 12px 0;
+    padding: 8px 0 13px 0;
   }
 
   .p-menuNav_link--login>a {
-    padding: 12px 0;
+    border: 1px solid #0051e0;
+    background: none;
+    color: #0051e0;
+    padding: 7px 0 12px 0;
   }
 
   .p-menuNav_links.is-footer {

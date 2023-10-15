@@ -96,12 +96,12 @@
                 <nav class="p-menuNav">
                   <ul class="p-menuNav_links is-login">
                     <li class="p-menuNav_link p-menuNav_link--button p-menuNav_link--login">
-                      <a href="https://sauna-ikitai.com/login">
+                      <a href="#">
                         <span>ログイン</span>
                       </a>
                     </li>
                     <li class="p-menuNav_link p-menuNav_link--button p-menuNav_link--register">
-                      <a href="https://sauna-ikitai.com/login?show=signup">
+                      <a href="#">
                         <span>新規登録</span>
                       </a>
                     </li>
@@ -109,39 +109,47 @@
 
                   <ul class="p-menuNav_links">
                     <li class="p-menuNav_link">
-                      <a href="https://sauna-ikitai.com/posts">サ活</a>
+                      <a href="#">サ活</a>
                     </li>
                     <li class="p-menuNav_link">
-                      <a href="https://sauna-ikitai.com/saunas/new">施設登録</a>
+                      <a href="#">施設登録</a>
                     </li>
                     <li class="p-menuNav_link">
-                      <a href="https://sauna-ikitai.com/tonttu">トントゥ抽選会</a>
+                      <a href="#">トントゥ抽選会</a>
                     </li>
                   </ul>
 
                   <ul class="p-menuNav_links is-footer">
                     <li class="p-menuNav_link u-mobileBlock">
-                      <a href="https://sauna-ikitai.com/members">サウナイキタイメンバーズ</a>
+                      <a href="#">サウナイキタイメンバーズ</a>
                     </li>
                     <li class="p-menuNav_link u-mobileBlock">
-                      <a href="https://sauna-ikitai.stores.jp/">サウナイキタイSTORE</a>
+                      <a href="#">サウナイキタイSTORE</a>
                     </li>
                     <li class="p-menuNav_link u-mobileBlock">
-                      <a href="/magazine/">マガジン</a>
+                      <a href="#">マガジン</a>
                     </li>
                     <li class="p-menuNav_link u-mobileBlock">
-                      <a href="/about">サウナイキタイとは？</a>
+                      <a href="#">サウナイキタイとは？</a>
                     </li>
 
                     <li class="p-menuNav_link u-mobileBlock">
-                      <a href="/feedback">ご意見箱</a>
+                      <a href="#">ご意見箱</a>
                     </li>
                     <li class="p-menuNav_link u-mobileBlock">
-                      <a href="/contact">お問い合わせ</a>
+                      <a href="#">お問い合わせ</a>
                     </li>
                   </ul>
                 </nav>
               </div>
+            </div>
+          </div>
+          <div class="p-search">
+            <div class="p-search_input">
+              <form action="#">
+                <input class="js-searchInput" type="text" name="keyword" value="" placeholder="キーワードでサウナ検索">
+                <button class="p-search_icon" type="submit"></button>
+              </form>
             </div>
           </div>
         </div>
@@ -2012,6 +2020,21 @@
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        // SPメニュー 表示/非表示
+        const menu_button = document.querySelector('.js-menuTrigger');
+        menu_button.addEventListener('click', () => {
+          const html = document.querySelector('html');
+          if (html.classList.contains('is-menuOpen')) {
+            html.classList.remove('is-menuOpen');
+            html.classList.remove('is-menuOpen--globalNav');
+            html.classList.remove('is-menuOpened');
+          } else {
+            html.classList.add('is-menuOpen');
+            html.classList.add('is-menuOpen--globalNav');
+            html.classList.add('is-menuOpened');
+          }
+        });
+
         // TOPの画像切り替え
         const bg_elements = document.querySelectorAll('.js-bg');
         let bg_index = 1;
