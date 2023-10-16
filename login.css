@@ -1,0 +1,258 @@
+.uq-login {
+  width: 540px;
+  background: #fff;
+  overflow: hidden;
+  margin: 100px auto 0;
+}
+
+.uq-login_content {
+  padding: 50px 80px;
+}
+
+.uq-login_logo {
+  width: 153px;
+  margin: 0 auto 40px;
+}
+
+.uq-login_logo img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.c-tab_action {
+  position: relative;
+  background: #fff;
+  z-index: 10;
+  margin: 0 0 20px;
+}
+
+.uq-login .c-tab_action {
+  margin-bottom: 30px;
+}
+
+.c-tab_buttons {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+}
+
+.c-tab_button {
+  border-right: 1px solid #eee;
+  text-align: center;
+  width: 50%;
+  list-style-type: none;
+  background: #f8f8f8;
+}
+
+.c-tab_button a {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #999;
+  text-decoration: none;
+  padding: 7px 0;
+  cursor: pointer;
+}
+
+.c-tab_button a.is-active {
+  border-radius: 8px 0 0 8px;
+  background: #333;
+  color: #fff;
+}
+
+.c-tab_button:last-of-type {
+  border-right: none;
+}
+
+.c-tab_button a.is-active {
+  border-radius: 8px 0 0 8px;
+  background: #333;
+  color: #fff;
+}
+
+.c-tab_button:last-of-type a.is-active {
+  border-radius: 0 8px 8px 0;
+}
+
+.uq-login_type {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.c-headline--lv4 {
+  display: block;
+  margin: 0 0 15px;
+}
+
+.uq-loginSns {
+  overflow: hidden;
+}
+
+.uq-loginSns .c-button {
+  margin-bottom: 5px;
+}
+
+.c-button.is-twitter a {
+  background: #04a2f9;
+}
+
+.c-button.is-line a {
+  background: #00b900;
+}
+
+.c-button.is-facebook a {
+  background: #2f5bac;
+}
+
+.uq-login_type .c-button a, .uq-login_type .c-button button {
+  width: 100%;
+  display: block;
+  height: auto;
+  line-height: 1.65;
+  font-size: 16px;
+  padding: 14px 64px;
+}
+
+.c-tab_content {
+  display: none;
+}
+
+.c-tab_content.is-active {
+  display: block;
+}
+
+.c-button.is-sns i {
+  position: absolute;
+  left: 15px;
+  width: 23px;
+  font-size: 23px;
+}
+
+.c-form {
+  position: relative;
+}
+
+.uq-loginForm_key {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.uq-loginForm_value {
+  margin-bottom: 15px;
+}
+
+.c-form_button {
+  position: relative;
+  box-sizing: border-box;
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.uq-loginForm .c-form_button {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.c-form_button .c-button {
+  display: block;
+  width: 400px;
+  height: 70px;
+  margin: 0 auto 10px;
+}
+
+.uq-login_type .c-button {
+  width: 100%;
+  height: auto;
+}
+
+.uq-loginForm_reset {
+  text-align: right;
+}
+
+.uq-loginForm_reset a {
+  font-size: 12px;
+  color: #0051e0;
+  text-decoration: underline;
+}
+
+.c-button--blackBorder a, .c-button--blackBorder button {
+  border: 2px solid #333;
+  background: #fff;
+  color: #333;
+}
+
+.uq-loginSns_description {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.uq-loginSns_description a {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 799px) {
+  .uq-login {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .uq-login_content {
+    padding: 30px 40px 60px;
+  }
+
+  .uq-login_logo {
+    width: 100px;
+  }
+
+  .c-tab_buttons {
+    border-radius: 6px;
+  }
+
+  .c-tab_button a {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+
+  .c-tab_button a.is-active {
+    border-radius: 6px 0 0 6px;
+  }
+
+  .c-tab_button:last-of-type a.is-active {
+    border-radius: 0 6px 6px 0;
+  }
+
+  .c-formText input {
+    font-size: 14px;
+  }
+
+  .c-form_button {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .uq-loginForm .c-form_button {
+    padding: 0;
+  }
+
+  .c-form_button .c-button {
+    width: 100%;
+  }
+
+  .c-button a, .c-button button {
+    font-size: 14px;
+    padding: 14px 0;
+  }
+
+  .uq-login_type .c-button a, .uq-login_type .c-button button {
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

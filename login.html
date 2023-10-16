@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html
+  lang="ja"
+  prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#"
+  data-view-mode class="desktop portrait chrome retina is-introSkip is-loading"
+>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>サウナイキタイ | ログイン</title>
+    <meta name="keywords" content="Portfolio2,サウナイキタイ,模写サイト,JUTJOY,jutjoy,ジャットジョイ">
+    <meta name="description" content="模写サイト | portfolio | サウナイキタイ" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaneko020.github.io/js-portfolio-2/">
+    <meta property="og:title" content="Portfolio2 | サウナイキタイ">
+    <meta property="og:image" content="https://kaneko020.github.io/js-portfolio-2/images/sauna_ikitai_thumbnail.png">
+    <meta property="og:site_name" content="Portfolio2 | サウナイキタイ">
+    <meta property="og:description" content="模写サイト | portfolio | サウナイキタイ" />
+    <meta name="twitter:title" content="Portfolio1 | サウナイキタイ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://kaneko020.github.io/js-portfolio-2/images/sauna_ikitai_thumbnail.png">
+    <meta name="twitter:description" content="模写サイト | portfolio | サウナイキタイ" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="sp_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ff5c8f4b0c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  </head>
+  <body>
+    <div class="l-page" data-page-id="top">
+      <div class="l-containers js-containers">
+        <div class="uq-login">
+          <div class="uq-login_content">
+            <h1 class="uq-login_logo">
+              <a href="./index.html">
+                <img src="./images/sauna_ikitai2.png" alt="サウナイキタイ ログイン">
+              </a>
+            </h1>
+            <div class="js-tab c-tab c-tab--2" data-current="login">
+              <nav class="c-tab_action">
+                <ul class="c-tab_buttons">
+                  <li class="c-tab_button">
+                    <a href="#" class="js-tabTrigger" data-target="login">ログイン</a>
+                  </li>
+                  <li class="c-tab_button">
+                    <a href="#" class="js-tabTrigger" data-target="register">新規登録</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="c-tab_contents">
+                <div class="c-tab_content js-tabContent" data-tab="login">
+                  <div class="uq-login_type is-sns">
+                    <h2 class="c-headline c-headline--lv4">
+                      <span class="c-headline_string">SNSアカウントでログイン</span>
+                    </h2>
+                    <div class="uq-loginSns">
+                      <div class="c-button c-button--full  is-sns is-twitter">
+                        <a href="#">
+                          <i class="fa-brands fa-twitter"></i>
+                          <span>Twitterでログイン</span>
+                        </a>
+                      </div>
+
+                      <div class="c-button c-button--full  is-sns is-line">
+                        <a href="#">
+                          <i class="fa-brands fa-line"></i>
+                          <span>LINEでログイン</span>
+                        </a>
+                      </div>
+                      <div class="c-button c-button--full  is-sns is-facebook">
+                        <a href="#">
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <span>Facebookでログイン</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="uq-login_type is-mail">
+                    <h2 class="c-headline c-headline--lv4">
+                      <span class="c-headline_string">メールアドレスでログイン</span>
+                    </h2>
+                    <!-- uq-loginForm -->
+                    <div id="email" class="uq-loginForm">
+                      <form method="POST" action="" accept-charset="UTF-8" class="c-form">
+                        <input name="_token" type="hidden" value="RaZGZxMxOdJUsdDRaUXtVxkF818AZ3DvoKMS8tZy">
+                        <dl class="uq-loginForm_set">
+                          <dt class="uq-loginForm_key">メールアドレス</dt>
+                          <dd class="uq-loginForm_value">
+                            <div class="c-formText">
+                              <input placeholder="sauna@example.com" name="login_email" type="email" value="">
+                            </div>
+                          </dd>
+                          <dt class="uq-loginForm_key">パスワード</dt>
+                          <dd class="uq-loginForm_value">
+                            <div class="c-formText">
+                              <input name="login_password" type="password" value="">
+                            </div>
+                          </dd>
+                        </dl>
+
+                        <div class="c-form_button">
+                          <div class="c-button c-button--submit">
+                            <button type="submit" name="button">
+                              <span>ログインする</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="uq-loginForm_reset">
+                          <a href="#">パスワードを忘れた場合はこちら</a>
+                        </div>
+
+                      </form>
+                    </div>
+                    <!-- uq-loginForm -->
+                  </div>
+
+                  <div class="uq-login_type">
+                    <div class="c-button c-button--blackBorder c-button--full">
+                      <a class="js-tabTrigger" data-target="register" data-scroll="top">
+                        <span>アカウント新規登録</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-tab_content js-tabContent" data-tab="register">
+                  <div class="uq-login_type is-sns">
+                    <h2 class="c-headline c-headline--lv4">
+                      <span class="c-headline_string">SNSアカウントで登録</span>
+                    </h2>
+                    <div class="uq-loginSns">
+                      <div class="c-button c-button--full is-sns is-twitter">
+                        <a href="#">
+                          <i class="fa-brands fa-twitter"></i>
+                          <span>Twitterで登録</span>
+                        </a>
+                      </div>
+
+                      <div class="c-button c-button--full is-sns is-line">
+                        <a href="#">
+                          <i class="fa-brands fa-line"></i>
+                          <span>LINEで登録</span>
+                        </a>
+                      </div>
+                      <div class="c-button c-button--full is-sns is-facebook">
+                        <a href="#">
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <span>Facebookで登録</span>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="uq-loginSns_description">
+                      アカウントを新規登録するにあたっては、
+                      <a href="#">利用規約</a>
+                      と
+                      <a href="#">プライバシーポリシー</a>
+                      に同意するものとします。
+                    </p>
+                  </div>
+                  <!-- -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // クエリパラメータを取得
+        const url = new URL(window.location.href);
+        const show_tab = url.searchParams.get('show');
+
+        // タブを表示
+        const show_trigger = document.querySelector(`.js-tabTrigger[data-target="${show_tab}"]`);
+        const show_content = document.querySelector(`.js-tabContent[data-tab="${show_tab}"]`);
+        show_trigger.classList.add('is-active');
+        show_content.classList.add('is-active');
+
+        // タブ切り替え
+        const tabTrigger = document.querySelectorAll('.js-tabTrigger');
+
+        tabTrigger.forEach((trigger) => {
+          trigger.addEventListener('click', () => {
+            const target = trigger.dataset.target;
+
+            const current_trigger = document.querySelector('.js-tabTrigger.is-active');
+            const current_content = document.querySelector('.js-tabContent.is-active');
+
+            current_trigger.classList.remove('is-active');
+            current_content.classList.remove('is-active');
+
+            const target_trigger = document.querySelector(`.js-tabTrigger[data-target="${target}"]`);
+            const target_content = document.querySelector(`.js-tabContent[data-tab="${target}"]`);
+            
+            target_trigger.classList.add('is-active');
+            target_content.classList.add('is-active');
+          });
+        });
+
+      });
+    </script>
+  </body>
+</html>
