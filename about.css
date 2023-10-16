@@ -1,0 +1,381 @@
+meta {
+  display: none;
+}
+
+.uq-about {
+  background: #fff;
+  font-size: 18px;
+}
+
+.uq-aboutDb_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 80px 120px;
+  box-sizing: border-box;
+}
+
+.uq-aboutDb_body {
+  width: 760px;
+  margin: auto;
+}
+
+.uq-about_header {
+  text-align: center;
+  margin: 20px 0 80px;
+}
+
+.uq-about_headline {
+  font-size: 60px;
+  color: #0051e0;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.uq-about img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.uq-about_headline img {
+  width: 250px;
+}
+
+.uq-about_copy {
+  font-size: 26px;
+  color: #0051e0;
+  font-weight: 700;
+}
+
+.u-mobileBlock {
+  display: none;
+}
+
+.uq-aboutDb_body>p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 2;
+}
+
+.uq-aboutDb_body>p:last-child {
+  margin-bottom: 0;
+}
+
+.uq-aboutEpisode_content {
+  width: 760px;
+  margin: auto;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.uq-aboutHeadline {
+  margin-bottom: 40px;
+}
+
+.uq-aboutHeadline_string {
+  font-weight: 700;
+  line-height: 1.6;
+  font-size: 36px;
+  color: #0051e0;
+}
+
+.uq-aboutEpisode_body {
+  position: relative;
+}
+
+.uq-aboutEpisode_body p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 2;
+}
+
+.uq-aboutEpisode_body p:last-child {
+  margin-bottom: 0;
+}
+
+.uq-aboutEpisode_image {
+  display: block;
+  width: 450px;
+  margin: 50px auto 0;
+}
+
+.uq-aboutChallenge {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.uq-aboutChallenge_content {
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding: 100px 80px;
+}
+
+.uq-aboutChallenge .uq-aboutHeadline {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.uq-aboutChallenge_items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.uq-aboutChallengeItem {
+  text-align: center;
+  flex-basis: 300px;
+  position: relative;
+}
+
+.uq-aboutChallengeItem_image {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #f7f7f7;
+  position: relative;
+}
+
+.uq-aboutChallengeItem_image img {
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.uq-aboutChallengeItem_headline {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.uq-aboutChallengeItem_description {
+  font-size: 16px;
+}
+
+.uq-aboutChallengeSaunner {
+  background: #f7f7f7;
+  padding: 50px;
+  width: 780px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.uq-aboutChallengeSaunner_headline {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.uq-aboutChallengeSaunner_body p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 2;
+  font-size: 16px;
+}
+
+.uq-aboutChallengeSaunner_body p:last-child {
+  margin-bottom: 0;
+}
+
+.uq-aboutTeam {
+  background: #f2f9fb;
+}
+
+.uq-aboutTeam, .uq-aboutTeam .uq-aboutHeadline {
+  text-align: center;
+}
+
+.uq-aboutTeam_content {
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 100px 80px;
+  box-sizing: border-box;
+}
+
+.uq-aboutTeam_members {
+  display: flex;
+  justify-content: center;
+}
+
+.uq-aboutTeamMember {
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.uq-aboutTeamMember_icon {
+  width: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.uq-aboutTeamMember_name {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.uq-aboutTeamMember_name a {
+  display: block;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.uq-aboutTeamMember_home {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.uq-aboutTeamMember_home span {
+  font-size: 11px;
+  line-height: 1;
+}
+
+.uq-aboutThanks {
+  background: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.uq-aboutThanks_content {
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 100px 80px 120px;
+  box-sizing: border-box;
+}
+
+.uq-aboutThanks_headline {
+  color: #0051e0;
+  font-weight: 700;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+}
+
+.uq-aboutThanks_list {
+  margin: 0 0 60px;
+}
+
+.uq-aboutThanks_list a {
+  text-decoration: underline;
+}
+
+.uq-aboutThanks_sauna {
+  color: #ef0d0d;
+  display: block;
+  margin-bottom: 80px;
+}
+
+.uq-aboutThanks_share {
+  padding-bottom: 40px;
+}
+
+.c-share {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+.c-share a {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  color: #333;
+  text-decoration: none;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .25s;
+  transition-property: all;
+}
+
+.c-share a span {
+  position: relative;
+  padding-left: 20px;
+}
+
+.c-share--twitter span:before {
+  content: "";
+  color: #00a2f9;
+}
+
+.c-share--facebook span:before {
+  content: "";
+  color: #2f5cad;
+}
+
+.c-share--facebook span:before, .c-share--twitter span:before {
+  font-family: iconfont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.c-share a span:before {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  margin: 0 5px 0 0;
+}
+
+.c-share:last-child {
+  margin-right: 0;
+}
+
+.uq-aboutThanks_news {
+  margin-bottom: 20px;
+}
+
+.c-breadcrumb {
+  box-sizing: border-box;
+  width: 1100px;
+  margin: 40px auto;
+}
+
+.c-breadcrumb_link {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 0 10px 0 0;
+}
+
+.c-breadcrumb_link:after {
+  font-family: iconfont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+  content: "";
+}
+
+.c-breadcrumb_link:after {
+  position: relative;
+  top: 1px;
+  font-size: 10px;
+  margin: 0 0 0 12px;
+}
