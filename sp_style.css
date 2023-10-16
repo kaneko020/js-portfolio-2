@@ -1289,4 +1289,194 @@
     margin-top: 30px;
   }
 
+  .p-modal {
+    height: 100%;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  .is-modalOpen .p-modal.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .is-modalOpen .is-show .p-modal_wrapper {
+    -webkit-animation-name: modalInSp;
+    animation-name: modalInSp;
+  }
+
+  @keyframes modalInSp {
+    0% {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translateY(95vh);
+      transform: translateY(95vh);
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+  .is-modalClose .is-show .p-modal_wrapper {
+    -webkit-animation-name: modalOutSp;
+    animation-name: modalOutSp;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+  }
+
+  @keyframes modalOutSp {
+    0% {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translateY(100vh);
+      transform: translateY(100vh);
+    }
+  }
+
+  .p-modal_inner {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+
+  .p-modal_header {
+    display: block;
+    pointer-events: none;
+  }
+
+  .p-modal_headline {
+    font-size: 16px;
+  }
+
+  .p-modal_close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition-delay: .15s;
+  }
+
+  .p-modal_content {
+    padding: 20px;
+  }
+
+  .p-modal_body {
+    padding: 0;
+  }
+
+  .p-filterModal_content {
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 100%;
+    padding: 0 20px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .p-filterModalItem {
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  .p-filterModalItem_headline {
+    margin-bottom: -5px;
+  }
+
+  .p-filterModalItem_body {
+    display: flex;
+    padding: 0;
+  }
+
+  .p-filterModal--area .p-filterModalItem_body .c-formCheckbox {
+    flex-basis: 50%;
+  }
+
+  .p-filterModal--area .p-filterModalItem_body .c-formCheckbox:nth-of-type(-n+5) {
+    margin-top: 15px;
+    flex-basis: 50%;
+  }
+
+  .c-formCheckbox label {
+    padding-left: 40px;
+  }
+
+  .c-formCheckbox label:after, .c-formCheckbox label:before {
+    top: -4px;
+  }
+
+  .c-formCheckbox label:after {
+    top: -4px;
+  }
+
+  .p-filterModal .c-button {
+    border-radius: 0;
+  }
+
+  .p-filterModal .c-button a {
+    border-radius: 0;
+  }
+
+  .p-filterModal--conditions .p-filterModalItem_body .c-formCheckbox {
+    flex-basis: 50%;
+  }
+
+  .p-filterModal--conditions .p-filterModalItem_body .c-formCheckbox:nth-of-type(-n+3) {
+    margin-top: 15px;
+  }
+
+  .p-filterModalItem_body .c-formCheckbox small {
+    font-size: 7px;
+    margin-left: -3px;
+  }
+
+  .p-filterModalItem--stove .p-filterModalItem_headline {
+    display: none;
+  }
+
+  .p-filterModalItem--stove .p-filterModalItem_headlineLv2:nth-of-type(2) {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+
+  .p-filterModalItem--stove .p-filterModalItem_body .c-formCheckbox {
+    margin-top: 15px;
+  }
+
+  .p-filterModalItem:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .p-modal[data-modal-type=filterArea] .p-modal_inner, .p-modal[data-modal-type=filterConditions] .p-modal_inner {
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .p-modal[data-modal-type=filterArea] .p-modal_overlay, .p-modal[data-modal-type=filterConditions] .p-modal_overlay, .p-modal[data-modal-type=post] .p-modal_overlay {
+    display: none;
+  }
+
+  .p-modal.is-tonttuHistory .p-modal_content, .p-modal[data-modal-type=filterArea] .p-modal_content, .p-modal[data-modal-type=filterConditions] .p-modal_content {
+    padding: 0;
+  }
+
+  .p-modal[data-modal-type=filterArea] .p-modal_content, .p-modal_content .p-modal[data-modal-type=filterConditions] {
+    height: 100%;
+    padding-bottom: 0;
+  }
 }

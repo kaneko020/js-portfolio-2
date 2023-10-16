@@ -2018,20 +2018,896 @@
       </div>
     </footer>
 
+    <!-- モーダル(都道府県から探す) -->
+    <div class="p-modal js-modal" data-modal-type="filterArea">
+      <div class="p-modal_overlay js-modalTrigger"></div>
+      <div class="p-modal_wrapper">
+        <div class="p-modal_inner">
+          <div class="p-modal_header js-modalTrigger">
+            <h2 class="p-modal_headline js-modalTrigger">エリア絞り込み</h2>
+          </div>
+          <div class="p-modal_close js-modalTrigger"></div>
+
+          <div class="p-modal_content">
+            <div class="p-modal_body p-filterModal p-filterModal--area js-area">
+              <div class="p-filterModal_content">
+                <div class="p-filterModalItem p-filterModalItem--tohoku">
+                  <h3 class="p-filterModalItem_headline">北海道・東北</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_01" name="prefecture[]" type="checkbox" value="hokkaido">
+                      <label for="lb_area_01">北海道</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_02" name="prefecture[]" type="checkbox" value="aomori">
+                      <label for="lb_area_02">青森県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_03" name="prefecture[]" type="checkbox" value="iwate">
+                      <label for="lb_area_03">岩手県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_04" name="prefecture[]" type="checkbox" value="miyagi">
+                      <label for="lb_area_04">宮城県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_05" name="prefecture[]" type="checkbox" value="akita">
+                      <label for="lb_area_05">秋田県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_06" name="prefecture[]" type="checkbox" value="yamagata">
+                      <label for="lb_area_06">山形県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_07" name="prefecture[]" type="checkbox" value="fukushima">
+                      <label for="lb_area_07">福島県</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--kanto">
+                  <h3 class="p-filterModalItem_headline">関東</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_08" name="prefecture[]" type="checkbox" value="ibaraki">
+                      <label for="lb_area_08">茨城県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_09" name="prefecture[]" type="checkbox" value="tochigi">
+                      <label for="lb_area_09">栃木県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_10" name="prefecture[]" type="checkbox" value="gunma">
+                      <label for="lb_area_10">群馬県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_11" name="prefecture[]" type="checkbox" value="saitama">
+                      <label for="lb_area_11">埼玉県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_12" name="prefecture[]" type="checkbox" value="chiba">
+                      <label for="lb_area_12">千葉県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_13" name="prefecture[]" type="checkbox" value="tokyo">
+                      <label for="lb_area_13">東京都</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_14" name="prefecture[]" type="checkbox" value="kanagawa">
+                      <label for="lb_area_14">神奈川県</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--hokuriku">
+                  <h3 class="p-filterModalItem_headline">北陸・甲信越</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_15" name="prefecture[]" type="checkbox" value="niigata">
+                      <label for="lb_area_15">新潟県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_16" name="prefecture[]" type="checkbox" value="toyama">
+                      <label for="lb_area_16">富山県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_17" name="prefecture[]" type="checkbox" value="ishikawa">
+                      <label for="lb_area_17">石川県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_18" name="prefecture[]" type="checkbox" value="fukui">
+                      <label for="lb_area_18">福井県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_19" name="prefecture[]" type="checkbox" value="yamanashi">
+                      <label for="lb_area_19">山梨県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_20" name="prefecture[]" type="checkbox" value="nagano">
+                      <label for="lb_area_20">長野県</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--tokai">
+                  <h3 class="p-filterModalItem_headline">東海</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_21" name="prefecture[]" type="checkbox" value="gifu">
+                      <label for="lb_area_21">岐阜県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_22" name="prefecture[]" type="checkbox" value="shizuoka">
+                      <label for="lb_area_22">静岡県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_23" name="prefecture[]" type="checkbox" value="aichi">
+                      <label for="lb_area_23">愛知県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_24" name="prefecture[]" type="checkbox" value="mie">
+                      <label for="lb_area_24">三重県</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--kinki">
+                  <h3 class="p-filterModalItem_headline">近畿</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_25" name="prefecture[]" type="checkbox" value="shiga">
+                      <label for="lb_area_25">滋賀県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_26" name="prefecture[]" type="checkbox" value="kyoto">
+                      <label for="lb_area_26">京都府</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_27" name="prefecture[]" type="checkbox" value="osaka">
+                      <label for="lb_area_27">大阪府</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_28" name="prefecture[]" type="checkbox" value="hyogo">
+                      <label for="lb_area_28">兵庫県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_29" name="prefecture[]" type="checkbox" value="nara">
+                      <label for="lb_area_29">奈良県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_30" name="prefecture[]" type="checkbox" value="wakayama">
+                      <label for="lb_area_30">和歌山県</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--chugoku_shikoku">
+                  <h3 class="p-filterModalItem_headline">中国・四国</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_31" name="prefecture[]" type="checkbox" value="tottori">
+                      <label for="lb_area_31">鳥取県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_32" name="prefecture[]" type="checkbox" value="shimane">
+                      <label for="lb_area_32">島根県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_33" name="prefecture[]" type="checkbox" value="okayama">
+                      <label for="lb_area_33">岡山県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_34" name="prefecture[]" type="checkbox" value="hiroshima">
+                      <label for="lb_area_34">広島県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_35" name="prefecture[]" type="checkbox" value="yamaguchi">
+                      <label for="lb_area_35">山口県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_36" name="prefecture[]" type="checkbox" value="tokushima">
+                      <label for="lb_area_36">徳島県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_37" name="prefecture[]" type="checkbox" value="kagawa">
+                      <label for="lb_area_37">香川県</label>
+                          </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_38" name="prefecture[]" type="checkbox" value="ehime">
+                      <label for="lb_area_38">愛媛県</label>
+                          </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_39" name="prefecture[]" type="checkbox" value="kochi">
+                      <label for="lb_area_39">高知県</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--kyushu">
+                  <h3 class="p-filterModalItem_headline">九州・沖縄</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_40" name="prefecture[]" type="checkbox" value="fukuoka">
+                      <label for="lb_area_40">福岡県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_41" name="prefecture[]" type="checkbox" value="saga">
+                      <label for="lb_area_41">佐賀県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_42" name="prefecture[]" type="checkbox" value="nagasaki">
+                      <label for="lb_area_42">長崎県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_43" name="prefecture[]" type="checkbox" value="kumamoto">
+                      <label for="lb_area_43">熊本県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_44" name="prefecture[]" type="checkbox" value="oita">
+                      <label for="lb_area_44">大分県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_45" name="prefecture[]" type="checkbox" value="miyazaki">
+                      <label for="lb_area_45">宮崎県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_46" name="prefecture[]" type="checkbox" value="kagoshima">
+                      <label for="lb_area_46">鹿児島県</label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input class="js-checkbox" id="lb_area_47" name="prefecture[]" type="checkbox" value="okinawa">
+                      <label for="lb_area_47">沖縄県</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="c-button c-button--full">
+                <a class="js-filterSubmit"><span>このエリアで絞り込む</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- モーダル(特徴から探す) -->
+    <div class="p-modal js-modal" data-modal-type="filterConditions">
+      <div class="p-modal_overlay js-modalTrigger"></div>
+      <div class="p-modal_wrapper">
+        <div class="p-modal_inner">
+          <div class="p-modal_header js-modalTrigger">
+            <h2 class="p-modal_headline js-modalTrigger">条件絞り込み</h2>
+          </div>
+          <div class="p-modal_close js-modalTrigger"></div>
+  
+          <div class="p-modal_content">
+            <div class="p-modal_body p-filterModal p-filterModal--conditions js-conditions">
+              <div class="p-filterModal_content">
+                <div class="p-filterModalItem p-filterModalItem--target_gender">
+                  <h3 class="p-filterModalItem_headline">性別</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_0" type="checkbox" class="js-checkbox" name="conditions[]" value="target_gender#is_male_available">
+                      <label for="lb_conditions_0"><span>男性が入れる</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_1" type="checkbox" class="js-checkbox" name="conditions[]" value="target_gender#is_female_available">
+                      <label for="lb_conditions_1"><span>女性が入れる</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--mixed_type">
+                  <h3 class="p-filterModalItem_headline">男女で入れる</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_2" type="checkbox" class="js-checkbox" name="conditions[]" value="mixed_type#naked">
+                      <label for="lb_conditions_2"><span>裸で入れる</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_3" type="checkbox" class="js-checkbox" name="conditions[]" value="mixed_type#swimwear">
+                      <label for="lb_conditions_3"><span>水着着用</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_4" type="checkbox" class="js-checkbox" name="conditions[]" value="mixed_type#clothes">
+                      <label for="lb_conditions_4"><span>館内着</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--facility_type">
+                  <h3 class="p-filterModalItem_headline">施設タイプ</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_5" type="checkbox" class="js-checkbox" name="conditions[]" value="facility_type#saunaspa">
+                      <label for="lb_conditions_5"><span>温浴施設<small>（スーパー銭湯・サウナ・スパ施設）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_6" type="checkbox" class="js-checkbox" name="conditions[]" value="facility_type#sento">
+                      <label for="lb_conditions_6"><span>銭湯<small>（公衆浴場）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_7" type="checkbox" class="js-checkbox" name="conditions[]" value="facility_type#hotel">
+                      <label for="lb_conditions_7"><span>ホテル・旅館</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_8" type="checkbox" class="js-checkbox" name="conditions[]" value="facility_type#capsulehotel">
+                      <label for="lb_conditions_8"><span>カプセルホテル</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_9" type="checkbox" class="js-checkbox" name="conditions[]" value="facility_type#golf">
+                      <label for="lb_conditions_9"><span>ゴルフ場</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_10" type="checkbox" class="js-checkbox" name="conditions[]" value="facility_type#gym">
+                      <label for="lb_conditions_10"><span>スポーツジム</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_11" type="checkbox" class="js-checkbox" name="conditions[]" value="facility_type#privatesauna">
+                      <label for="lb_conditions_11"><span>プライベートサウナ<small>（個室サウナ、貸切サウナ専門店）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_12" type="checkbox" class="js-checkbox" name="conditions[]" value="facility_type#campsite">
+                      <label for="lb_conditions_12"><span>キャンプ場</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_13" type="checkbox" class="js-checkbox" name="conditions[]" value="facility_type#lovehotel">
+                      <label for="lb_conditions_13"><span>ラブホテル</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_14" type="checkbox" class="js-checkbox" name="conditions[]" value="facility_type#others">
+                      <label for="lb_conditions_14"><span>その他</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--guest_type">
+                  <h3 class="p-filterModalItem_headline">利用タイプ</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_15" type="checkbox" class="js-checkbox" name="conditions[]" value="guest_type#one_day_visit">
+                      <label for="lb_conditions_15"><span>日帰り入浴可</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_16" type="checkbox" class="js-checkbox" name="conditions[]" value="guest_type#guests_only">
+                      <label for="lb_conditions_16"><span>宿泊者のみ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_17" type="checkbox" class="js-checkbox" name="conditions[]" value="guest_type#members_only">
+                      <label for="lb_conditions_17"><span>会員のみ</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--travel">
+                  <h3 class="p-filterModalItem_headline">宿泊</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_18" type="checkbox" class="js-checkbox" name="conditions[]" value="travel#can_stay">
+                      <label for="lb_conditions_18"><span>宿泊予約有り<small>（楽天トラベル）</small></span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--sauna_type">
+                  <h3 class="p-filterModalItem_headline">サウナタイプ</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_19" type="checkbox" class="js-checkbox" name="conditions[]" value="sauna_type#dry">
+                      <label for="lb_conditions_19"><span>ドライサウナ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_20" type="checkbox" class="js-checkbox" name="conditions[]" value="sauna_type#salt">
+                      <label for="lb_conditions_20"><span>塩サウナ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_21" type="checkbox" class="js-checkbox" name="conditions[]" value="sauna_type#steam">
+                      <label for="lb_conditions_21"><span>スチームサウナ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_22" type="checkbox" class="js-checkbox" name="conditions[]" value="sauna_type#mist">
+                      <label for="lb_conditions_22"><span>ミストサウナ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_23" type="checkbox" class="js-checkbox" name="conditions[]" value="sauna_type#herb">
+                      <label for="lb_conditions_23"><span>薬草サウナ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_24" type="checkbox" class="js-checkbox" name="conditions[]" value="sauna_type#korean">
+                      <label for="lb_conditions_24"><span>韓国式サウナ</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--stove">
+                  <h3 class="p-filterModalItem_headline">ストーブ</h3>
+                  <div class="p-filterModalItem_body">
+                    <!-- ストーブタイプ・熱源は一緒に表示  -->
+                    <h4 class="p-filterModalItem_headlineLv2">ストーブタイプ</h4>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_25" type="checkbox" class="js-checkbox" name="conditions[]" value="stove_type#infrared_ray">
+                      <label for="lb_conditions_25"><span>遠赤外線型<span></span></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_26" type="checkbox" class="js-checkbox" name="conditions[]" value="stove_type#stone">
+                      <label for="lb_conditions_26"><span>対流式<small>（ストーン）</small><span></span></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_27" type="checkbox" class="js-checkbox" name="conditions[]" value="stove_type#bona">
+                      <label for="lb_conditions_27"><span>格納式<small>（ボナサウナ、座面、壁）</small><span></span></span></label>
+                    </div>
+
+                    <h4 class="p-filterModalItem_headlineLv2">熱源</h4>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_28" type="checkbox" class="js-checkbox" name="conditions[]" value="heat_source#gas">
+                      <label for="lb_conditions_28"><span>ガス<span></span></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_29" type="checkbox" class="js-checkbox" name="conditions[]" value="heat_source#electric">
+                      <label for="lb_conditions_29"><span>電気<span></span></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_30" type="checkbox" class="js-checkbox" name="conditions[]" value="heat_source#wood">
+                      <label for="lb_conditions_30"><span>薪<span></span></span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--loyly_service">
+                  <h3 class="p-filterModalItem_headline">ロウリュ</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_31" type="checkbox" class="js-checkbox" name="conditions[]" value="loyly_service#has_loyly">
+                      <label for="lb_conditions_31"><span>アウフグース<small>（ロウリュサービス）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_32" type="checkbox" class="js-checkbox" name="conditions[]" value="loyly_service#has_autoloyly">
+                      <label for="lb_conditions_32"><span>オートロウリュ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_33" type="checkbox" class="js-checkbox" name="conditions[]" value="loyly_service#can_self_loyly">
+                      <label for="lb_conditions_33"><span>セルフロウリュ</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--aufguss_style">
+                  <h3 class="p-filterModalItem_headline">ロウリュスタイル</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_34" type="checkbox" class="js-checkbox" name="conditions[]" value="aufguss_style#use_towel">
+                      <label for="lb_conditions_34"><span>タオル<small>（アウフグース）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_35" type="checkbox" class="js-checkbox" name="conditions[]" value="aufguss_style#use_uchiwa">
+                      <label for="lb_conditions_35"><span>うちわ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_36" type="checkbox" class="js-checkbox" name="conditions[]" value="aufguss_style#use_blower">
+                      <label for="lb_conditions_36"><span>ブロワー</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--bath_type">
+                  <h3 class="p-filterModalItem_headline">水風呂タイプ</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_37" type="checkbox" class="js-checkbox" name="conditions[]" value="bath_type#water_bath">
+                      <label for="lb_conditions_37"><span>水風呂</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_38" type="checkbox" class="js-checkbox" name="conditions[]" value="bath_type#ice_room">
+                      <label for="lb_conditions_38"><span>冷凍ルーム</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_39" type="checkbox" class="js-checkbox" name="conditions[]" value="bath_type#only_shower">
+                      <label for="lb_conditions_39"><span>シャワーのみ<small>（水風呂なし）</small></span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--water_type">
+                  <h3 class="p-filterModalItem_headline">水</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_40" type="checkbox" class="js-checkbox" name="conditions[]" value="water_type#tap_water">
+                      <label for="lb_conditions_40"><span>水道水</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_41" type="checkbox" class="js-checkbox" name="conditions[]" value="water_type#softened_water">
+                      <label for="lb_conditions_41"><span>軟水</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_42" type="checkbox" class="js-checkbox" name="conditions[]" value="water_type#groundwater">
+                      <label for="lb_conditions_42"><span>地下水</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_43" type="checkbox" class="js-checkbox" name="conditions[]" value="water_type#hot_spring">
+                      <label for="lb_conditions_43"><span>鉱泉<small>（温泉）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_44" type="checkbox" class="js-checkbox" name="conditions[]" value="water_type#charcoal">
+                      <label for="lb_conditions_44"><span>備長炭</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_45" type="checkbox" class="js-checkbox" name="conditions[]" value="water_type#others">
+                      <label for="lb_conditions_45"><span>その他</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--water_depth">
+                  <h3 class="p-filterModalItem_headline">水風呂深さ</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_46" type="checkbox" class="js-checkbox" name="conditions[]" value="water_depth#20~40cm">
+                      <label for="lb_conditions_46"><span>20~40cm   (脛)</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_47" type="checkbox" class="js-checkbox" name="conditions[]" value="water_depth#40~60cm">
+                      <label for="lb_conditions_47"><span>40~60cm   (膝)</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_48" type="checkbox" class="js-checkbox" name="conditions[]" value="water_depth#60~80cm">
+                      <label for="lb_conditions_48"><span>60~80cm   (股下)</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_49" type="checkbox" class="js-checkbox" name="conditions[]" value="water_depth#80~110cm">
+                      <label for="lb_conditions_49"><span>80~110cm  (腰)</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_50" type="checkbox" class="js-checkbox" name="conditions[]" value="water_depth#110~140cm">
+                      <label for="lb_conditions_50"><span>110~140cm (胸)</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_51" type="checkbox" class="js-checkbox" name="conditions[]" value="water_depth#140cm~">
+                      <label for="lb_conditions_51"><span>140cm~    (肩)</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--bath_chair">
+                  <h3 class="p-filterModalItem_headline">休憩場所イス</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_52" type="checkbox" class="js-checkbox" name="conditions[]" value="bath_chair#chair">
+                      <label for="lb_conditions_52"><span>イス</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_53" type="checkbox" class="js-checkbox" name="conditions[]" value="bath_chair#bench">
+                      <label for="lb_conditions_53"><span>ベンチ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_54" type="checkbox" class="js-checkbox" name="conditions[]" value="bath_chair#deckchair">
+                      <label for="lb_conditions_54"><span>デッキチェア</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_55" type="checkbox" class="js-checkbox" name="conditions[]" value="bath_chair#fullflatdeckchair">
+                      <label for="lb_conditions_55"><span>寝転べるイス<small>（フルフラット可）</small></span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--maniac">
+                  <h3 class="p-filterModalItem_headline">マニアック</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_56" type="checkbox" class="js-checkbox" name="conditions[]" value="maniac#has_tv">
+                      <label for="lb_conditions_56"><span>サウナ室テレビ有り</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_57" type="checkbox" class="js-checkbox" name="conditions[]" value="maniac#not_has_tv">
+                      <label for="lb_conditions_57"><span>サウナ室テレビ無し</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_58" type="checkbox" class="js-checkbox" name="conditions[]" value="maniac#has_free_sauna_pants">
+                      <label for="lb_conditions_58"><span>サウナパンツあり</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_59" type="checkbox" class="js-checkbox" name="conditions[]" value="maniac#is_vibra">
+                      <label for="lb_conditions_59"><span>バイブラ水風呂</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_60" type="checkbox" class="js-checkbox" name="conditions[]" value="maniac#has_openair_space">
+                      <label for="lb_conditions_60"><span>外気浴スペース</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_61" type="checkbox" class="js-checkbox" name="conditions[]" value="maniac#has_whisking">
+                      <label for="lb_conditions_61"><span>ウィスキング</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--facility">
+                  <h3 class="p-filterModalItem_headline">設備</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_62" type="checkbox" class="js-checkbox" name="conditions[]" value="facility#is_24hour">
+                      <label for="lb_conditions_62"><span>24時間営業</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_63" type="checkbox" class="js-checkbox" name="conditions[]" value="facility#has_free_wifi">
+                      <label for="lb_conditions_63"><span>Wi-Fi</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_64" type="checkbox" class="js-checkbox" name="conditions[]" value="facility#has_electric_source">
+                      <label for="lb_conditions_64"><span>電源</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_65" type="checkbox" class="js-checkbox" name="conditions[]" value="facility#has_working_space">
+                      <label for="lb_conditions_65"><span>作業スペース</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_66" type="checkbox" class="js-checkbox" name="conditions[]" value="facility#has_foodspace">
+                      <label for="lb_conditions_66"><span>食事処</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_67" type="checkbox" class="js-checkbox" name="conditions[]" value="facility#has_comic">
+                      <label for="lb_conditions_67"><span>漫画</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_68" type="checkbox" class="js-checkbox" name="conditions[]" value="facility#has_relax_space">
+                      <label for="lb_conditions_68"><span>館内休憩スペース</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_69" type="checkbox" class="js-checkbox" name="conditions[]" value="facility#has_parking">
+                      <label for="lb_conditions_69"><span>駐車場</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_70" type="checkbox" class="js-checkbox" name="conditions[]" value="facility#has_bedrock_bath">
+                      <label for="lb_conditions_70"><span>岩盤浴</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--facetowel_system">
+                  <h3 class="p-filterModalItem_headline">フェイスタオル</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                        <input id="lb_conditions_71" type="checkbox" class="js-checkbox" name="conditions[]" value="facetowel_system#unlimited">
+                        <label for="lb_conditions_71"><span>フェイスタオル使い放題</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_72" type="checkbox" class="js-checkbox" name="conditions[]" value="facetowel_system#one_free">
+                      <label for="lb_conditions_72"><span>フェイスタオル1枚無料</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_73" type="checkbox" class="js-checkbox" name="conditions[]" value="facetowel_system#paid">
+                      <label for="lb_conditions_73"><span>フェイスタオル有料レンタル可</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--bathtowel_system">
+                  <h3 class="p-filterModalItem_headline">バスタオル</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_74" type="checkbox" class="js-checkbox" name="conditions[]" value="bathtowel_system#unlimited">
+                      <label for="lb_conditions_74"><span>バスタオル使い放題</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_75" type="checkbox" class="js-checkbox" name="conditions[]" value="bathtowel_system#one_free">
+                      <label for="lb_conditions_75"><span>バスタオル1枚無料</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_76" type="checkbox" class="js-checkbox" name="conditions[]" value="bathtowel_system#paid">
+                      <label for="lb_conditions_76"><span>バスタオル有料レンタル可</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--indoor_clothes_system">
+                  <h3 class="p-filterModalItem_headline">館内着</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_77" type="checkbox" class="js-checkbox" name="conditions[]" value="indoor_clothes_system#unlimited">
+                      <label for="lb_conditions_77"><span>館内着使い放題</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_78" type="checkbox" class="js-checkbox" name="conditions[]" value="indoor_clothes_system#one_free">
+                      <label for="lb_conditions_78"><span>館内着1枚無料</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_79" type="checkbox" class="js-checkbox" name="conditions[]" value="indoor_clothes_system#paid">
+                      <label for="lb_conditions_79"><span>館内着有料レンタル可</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--sauna_mat_system">
+                  <h3 class="p-filterModalItem_headline">サウナマット</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_80" type="checkbox" class="js-checkbox" name="conditions[]" value="sauna_mat_system#unlimited_towel_mat">
+                      <label for="lb_conditions_80"><span>サウナマット使い放題<small>（タオル地）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_81" type="checkbox" class="js-checkbox" name="conditions[]" value="sauna_mat_system#one_free_towel_mat">
+                      <label for="lb_conditions_81"><span>サウナマット1枚無料<small>（タオル地）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_82" type="checkbox" class="js-checkbox" name="conditions[]" value="sauna_mat_system#paid_towel_mat">
+                      <label for="lb_conditions_82"><span>サウナマット有料レンタル可<small>（タオル地）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_83" type="checkbox" class="js-checkbox" name="conditions[]" value="sauna_mat_system#flutterboard">
+                      <label for="lb_conditions_83"><span>ビート板</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--payment_method">
+                  <h3 class="p-filterModalItem_headline">支払い方法</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_84" type="checkbox" class="js-checkbox" name="conditions[]" value="payment_method#can_use_cash">
+                      <label for="lb_conditions_84"><span>現金</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_85" type="checkbox" class="js-checkbox" name="conditions[]" value="payment_method#can_use_credit_card">
+                      <label for="lb_conditions_85"><span>クレジットカード</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_86" type="checkbox" class="js-checkbox" name="conditions[]" value="payment_method#can_use_electric_money">
+                      <label for="lb_conditions_86"><span>電子マネー</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--relaxation">
+                  <h3 class="p-filterModalItem_headline">リラクゼーション</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_87" type="checkbox" class="js-checkbox" name="conditions[]" value="relaxation#has_massage_service">
+                      <label for="lb_conditions_87"><span>ボディケア</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_88" type="checkbox" class="js-checkbox" name="conditions[]" value="relaxation#has_akasuri">
+                      <label for="lb_conditions_88"><span>アカスリ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_89" type="checkbox" class="js-checkbox" name="conditions[]" value="relaxation#has_ancient_thai">
+                      <label for="lb_conditions_89"><span>タイ古式</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_90" type="checkbox" class="js-checkbox" name="conditions[]" value="relaxation#has_head_spa">
+                      <label for="lb_conditions_90"><span>ヘッドスパ</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--amenity">
+                  <h3 class="p-filterModalItem_headline">アメニティ</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_91" type="checkbox" class="js-checkbox" name="conditions[]" value="amenity#has_free_shampoo">
+                      <label for="lb_conditions_91"><span>シャンプー</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_92" type="checkbox" class="js-checkbox" name="conditions[]" value="amenity#has_free_conditioner">
+                      <label for="lb_conditions_92"><span>コンディショナー</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_93" type="checkbox" class="js-checkbox" name="conditions[]" value="amenity#has_free_bodysoap">
+                      <label for="lb_conditions_93"><span>ボディーソープ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_94" type="checkbox" class="js-checkbox" name="conditions[]" value="amenity#has_free_facesoap">
+                      <label for="lb_conditions_94"><span>フェイスソープ</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_95" type="checkbox" class="js-checkbox" name="conditions[]" value="amenity#has_free_bodytowel">
+                      <label for="lb_conditions_95"><span>ナイロンタオル</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_96" type="checkbox" class="js-checkbox" name="conditions[]" value="amenity#has_free_dryer">
+                      <label for="lb_conditions_96"><span>ドライヤー</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_97" type="checkbox" class="js-checkbox" name="conditions[]" value="amenity#has_free_skin_lotion">
+                      <label for="lb_conditions_97"><span>化粧水</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_98" type="checkbox" class="js-checkbox" name="conditions[]" value="amenity#has_free_milky_lotion">
+                      <label for="lb_conditions_98"><span>乳液</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_99" type="checkbox" class="js-checkbox" name="conditions[]" value="amenity#has_free_makeup_remover">
+                      <label for="lb_conditions_99"><span>メイク落とし</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--drink">
+                  <h3 class="p-filterModalItem_headline">ドリンク</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_100" type="checkbox" class="js-checkbox" name="conditions[]" value="drink#has_free_water">
+                      <label for="lb_conditions_100"><span>給水器</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_101" type="checkbox" class="js-checkbox" name="conditions[]" value="drink#has_ion_water">
+                      <label for="lb_conditions_101"><span>イオンウォーター</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_102" type="checkbox" class="js-checkbox" name="conditions[]" value="drink#has_oropo">
+                      <label for="lb_conditions_102"><span>オロポ</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--rule">
+                  <h3 class="p-filterModalItem_headline">ルール</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_103" type="checkbox" class="js-checkbox" name="conditions[]" value="rule#allow_tattoo">
+                      <label for="lb_conditions_103"><span>タトゥーOK</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--outdoor">
+                  <h3 class="p-filterModalItem_headline">アウトドアサウナ</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_104" type="checkbox" class="js-checkbox" name="conditions[]" value="outdoor#has_permanent_tent_sauna">
+                      <label for="lb_conditions_104"><span>テントサウナ<small>（常設・定期設置）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_105" type="checkbox" class="js-checkbox" name="conditions[]" value="outdoor#has_rental_tent_sauna">
+                      <label for="lb_conditions_105"><span>テントサウナ<small>（レンタル）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_106" type="checkbox" class="js-checkbox" name="conditions[]" value="outdoor#can_use_tent_sauna">
+                      <label for="lb_conditions_106"><span>テントサウナ<small>（持込OK）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_107" type="checkbox" class="js-checkbox" name="conditions[]" value="outdoor#has_sauna_lodge">
+                      <label for="lb_conditions_107"><span>サウナ小屋<small>（屋外・水着着用）</small></span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_108" type="checkbox" class="js-checkbox" name="conditions[]" value="outdoor#has_sauna_car">
+                      <label for="lb_conditions_108"><span>サウナカー</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_109" type="checkbox" class="js-checkbox" name="conditions[]" value="outdoor#has_river">
+                      <label for="lb_conditions_109"><span>川が水風呂</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_110" type="checkbox" class="js-checkbox" name="conditions[]" value="outdoor#has_waterfalls">
+                      <label for="lb_conditions_110"><span>滝が水風呂</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_111" type="checkbox" class="js-checkbox" name="conditions[]" value="outdoor#has_lake">
+                      <label for="lb_conditions_111"><span>湖が水風呂</span></label>
+                    </div>
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_112" type="checkbox" class="js-checkbox" name="conditions[]" value="outdoor#has_sea">
+                      <label for="lb_conditions_112"><span>海が水風呂</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--usage">
+                  <h3 class="p-filterModalItem_headline">利用タイプ</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_113" type="checkbox" class="js-checkbox" name="conditions[]" value="usage#has_private_sauna">
+                      <label for="lb_conditions_113"><span>貸切利用可</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--members">
+                  <h3 class="p-filterModalItem_headline">協賛</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_114" type="checkbox" class="js-checkbox" name="conditions[]" value="members#is_members_sponsor">
+                      <label for="lb_conditions_114"><span>メンバーズ協賛施設</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-filterModalItem p-filterModalItem--regist_info">
+                  <h3 class="p-filterModalItem_headline">登録情報</h3>
+                  <div class="p-filterModalItem_body">
+                    <div class="c-formCheckbox">
+                      <input id="lb_conditions_115" type="checkbox" class="js-checkbox" name="conditions[]" value="regist_info#non_regist">
+                      <label for="lb_conditions_115"><span>サウナ情報未登録</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="c-button c-button--full">
+                <a class="js-filterSubmit"><span>この条件で絞り込む</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // SPメニュー 表示/非表示
+        const html = document.querySelector('html');
         const menu_button = document.querySelector('.js-menuTrigger');
+
         menu_button.addEventListener('click', () => {
-          const html = document.querySelector('html');
           if (html.classList.contains('is-menuOpen')) {
-            html.classList.remove('is-menuOpen');
-            html.classList.remove('is-menuOpen--globalNav');
-            html.classList.remove('is-menuOpened');
+            html.classList.remove('is-menuOpen', 'is-menuOpen--globalNav', 'is-menuOpened');
           } else {
-            html.classList.add('is-menuOpen');
-            html.classList.add('is-menuOpen--globalNav');
-            html.classList.add('is-menuOpened');
+            html.classList.add('is-menuOpen', 'is-menuOpen--globalNav', 'is-menuOpened');
           }
         });
 
@@ -2114,6 +2990,34 @@
           element.addEventListener('click', () => {
             element.closest('.js-postCard').classList.remove('is-readmore');
             element.closest('.js-postCard').classList.add('is-read');
+          });
+        });
+
+        // モーダル
+        const modal_triggers = document.querySelectorAll('.js-modalTrigger');
+        const filter_area_modal = document.querySelector('.js-modal[data-modal-type="filterArea"]');
+        const filter_conditions_modal = document.querySelector('.js-modal[data-modal-type="filterConditions"]');
+
+        modal_triggers.forEach((trigger) => {
+          trigger.addEventListener('click', () => {
+            if (trigger.dataset.modalType === 'filterArea') {
+              // 都道府県から探す
+              filter_area_modal.classList.add('is-show');
+              html.classList.add('is-modalOpen', 'is-scrollLock', 'is-modalOpened')
+            } else if (trigger.dataset.modalType === 'filterConditions') {
+              // 特徴から探す
+              filter_conditions_modal.classList.add('is-show');
+              html.classList.add('is-modalOpen', 'is-scrollLock', 'is-modalOpened')
+            } else {
+              // 閉じる
+              html.classList.add('is-modalClose');
+              html.classList.remove('is-scrollLock');
+              setTimeout(() => {
+                filter_area_modal.classList.remove('is-show');
+                filter_conditions_modal.classList.remove('is-show');
+                html.classList.remove('is-modalOpen', 'is-modalOpened', 'is-modalClose')
+              }, 500);
+            }
           });
         });
       });
