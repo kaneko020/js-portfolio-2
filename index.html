@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#" data-view-mode class="desktop portrait chrome retina is-introSkip">
+<html
+  lang="ja"
+  prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#"
+  data-view-mode class="desktop portrait chrome retina is-introSkip is-loading"
+>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -2899,8 +2903,15 @@
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // SPメニュー 表示/非表示
         const html = document.querySelector('html');
+
+        // ローディング
+        window.addEventListener('load', () => {
+          html.classList.remove('is-loading');
+        });
+
+
+        // SPメニュー 表示/非表示
         const menu_button = document.querySelector('.js-menuTrigger');
 
         menu_button.addEventListener('click', () => {

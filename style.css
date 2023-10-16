@@ -2684,6 +2684,12 @@ p {
   margin-bottom: -20px;
 }
 
+.is-loading .c-loading, [data-page-id=saunaSearch] .c-loading {
+  z-index: 1001;
+  opacity: 1;
+  visibility: visible;
+}
+
 .l-footer_content {
   width: 1100px;
   margin-right: auto;
