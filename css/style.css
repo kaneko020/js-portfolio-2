@@ -676,19 +676,19 @@ p {
 }
 
 .uq-topHeroBg_item:first-of-type {
-  background-image: url(./images/sauna_01.png);
+  background-image: url(../images/sauna_01.png);
 }
 .uq-topHeroBg_item:nth-of-type(2) {
-  background-image: url(./images/sauna_02.png);
+  background-image: url(../images/sauna_02.png);
 }
 .uq-topHeroBg_item:nth-of-type(3) {
-  background-image: url(./images/sauna_03.png);
+  background-image: url(../images/sauna_03.png);
 }
 .uq-topHeroBg_item:nth-of-type(4) {
-  background-image: url(./images/sauna_04.png);
+  background-image: url(../images/sauna_04.png);
 }
 .uq-topHeroBg_item:nth-of-type(5) {
-  background-image: url(./images/sauna_05.png);
+  background-image: url(../images/sauna_05.png);
 }
 
 .uq-topHeroBg_item.is-active {
@@ -1240,7 +1240,7 @@ p {
   position: absolute;
   top: 5px;
   left: -33px;
-  background-image: url(./images/beginner.png);
+  background-image: url(../images/beginner.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
@@ -1347,7 +1347,7 @@ p {
 
 .p-postCard_icon {
   border-radius: 50%;
-  background-image: url(./images/user_default.jpeg);
+  background-image: url(../images/user_default.jpeg);
   background-size: cover;
   width: 100%;
   height: 35px;
@@ -1977,7 +1977,7 @@ p {
   position: absolute;
   top: 4px;
   left: -1px;
-  background: url(./images/tonttu.png);
+  background: url(../images/tonttu.png);
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
@@ -2302,7 +2302,7 @@ p {
 
 .p-wanted {
   border-radius: 16px;
-  background-image: url(./images/wanted.png);
+  background-image: url(../images/wanted.png);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -2597,7 +2597,7 @@ p {
 
 .uq-topGoods {
   border-radius: 16px;
-  background-image: url(./images/goods.png);
+  background-image: url(../images/goods.png);
   background-repeat: no-repeat;
   background-position: 50%;
   display: flex;

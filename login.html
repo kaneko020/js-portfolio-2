@@ -20,9 +20,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://kaneko020.github.io/js-portfolio-2/images/sauna_ikitai_thumbnail.png">
     <meta name="twitter:description" content="模写サイト | portfolio | サウナイキタイ" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="sp_style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/sp_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -175,7 +175,10 @@
       document.addEventListener('DOMContentLoaded', function() {
         // クエリパラメータを取得
         const url = new URL(window.location.href);
-        const show_tab = url.searchParams.get('show');
+        const show_tab = 'login';
+        if (url.searchParams.get('show')) {
+          show_tab = url.searchParams.get('show');
+        }
 
         // タブを表示
         const show_trigger = document.querySelector(`.js-tabTrigger[data-target="${show_tab}"]`);

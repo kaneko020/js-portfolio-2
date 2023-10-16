@@ -1116,7 +1116,7 @@
   .uq-topGoods {
     width: 100%;
     border-radius: 0;
-    background-image: url(./images/goods_sp.png);
+    background-image: url(../images/goods_sp.png);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
