@@ -3020,6 +3020,20 @@
             }
           });
         });
+
+        const filter_submit_buttons = document.querySelectorAll('.js-filterSubmit');
+
+        filter_submit_buttons.forEach((filter_submit_button) => {
+          filter_submit_button.addEventListener('click', () => {
+            html.classList.add('is-modalClose');
+            html.classList.remove('is-scrollLock');
+            setTimeout(() => {
+              filter_area_modal.classList.remove('is-show');
+              filter_conditions_modal.classList.remove('is-show');
+              html.classList.remove('is-modalOpen', 'is-modalOpened', 'is-modalClose')
+            }, 500);
+          });
+        });
       });
     </script>
   </body>

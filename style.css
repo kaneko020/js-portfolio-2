@@ -3161,7 +3161,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 16px;
+  font-size: 25px;
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
@@ -3172,7 +3172,7 @@ p {
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 900;
   text-decoration: none;
   text-transform: none;
   content: "\f00d";
@@ -3285,15 +3285,15 @@ p {
 }
 
 .c-formCheckbox label:after {
-  font-family: iconfont;
+  font-family: "Font Awesome 6 Free";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 900;
   text-decoration: none;
   text-transform: none;
-  content: "";
+  content: "\f00c";
 }
 
 .c-formCheckbox label:after {
@@ -3307,6 +3307,11 @@ p {
   text-align: center;
   width: 30px;
   transition: color .2s ease-out;
+}
+
+.c-formCheckbox input:checked+label:after {
+  background: #0051e0;
+  color: #fff;
 }
 
 .p-filterModal--area .p-filterModalItem_body .c-formCheckbox {
