@@ -3157,6 +3157,10 @@ p {
   visibility: visible;
 }
 
+.is-modalOpen .p-modal_close:hover {
+  opacity: .5;
+}
+
 .p-modal_close:after {
   position: absolute;
   top: 50%;
@@ -3312,6 +3316,10 @@ p {
 .c-formCheckbox input:checked+label:after {
   background: #0051e0;
   color: #fff;
+}
+
+.desktop .c-formCheckbox:hover input+label:after {
+  color: #dedede;
 }
 
 .p-filterModal--area .p-filterModalItem_body .c-formCheckbox {
