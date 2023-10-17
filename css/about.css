@@ -50,7 +50,7 @@ meta {
 }
 
 .uq-about_headline img {
-  width: 270px;
+  width: 272px;
 }
 
 .uq-about_copy {
@@ -273,7 +273,7 @@ meta {
 
 .uq-aboutThanks_headline {
   color: #0051e0;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   font-family: Montserrat;
   font-size: 40px;
@@ -324,17 +324,18 @@ meta {
 }
 
 .c-share--twitter span:before {
-  content: "";
+  content: "\f099";
   color: #00a2f9;
 }
 
 .c-share--facebook span:before {
-  content: "";
+  content: "\f39e";
   color: #2f5cad;
+  margin: 0 0 0 2px;
 }
 
 .c-share--facebook span:before, .c-share--twitter span:before {
-  font-family: iconfont;
+  font-family: "Font Awesome 6 Brands";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
@@ -348,7 +349,6 @@ meta {
   position: absolute;
   top: 3px;
   left: 0;
-  margin: 0 5px 0 0;
 }
 
 .c-share:last-child {
@@ -357,6 +357,14 @@ meta {
 
 .uq-aboutThanks_news {
   margin-bottom: 20px;
+}
+
+.c-headline--lv2 {
+  margin: 0 0 25px;
+}
+
+.c-headline--lv2 .c-headline_string {
+  font-size: 26px;
 }
 
 .c-breadcrumb {
@@ -368,25 +376,263 @@ meta {
 .c-breadcrumb_link {
   display: inline-block;
   font-size: 12px;
-  font-weight: 300;
-  padding: 0 10px 0 0;
+  font-weight: 400;
+  padding: 0 11px 0 0;
 }
 
 .c-breadcrumb_link:after {
-  font-family: iconfont;
+  font-family: "Font Awesome 6 Free";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 900;
   text-decoration: none;
   text-transform: none;
-  content: "";
+  content: "\f054";
 }
 
 .c-breadcrumb_link:after {
   position: relative;
-  top: 1px;
-  font-size: 10px;
-  margin: 0 0 0 12px;
+  top: 0;
+  font-size: 11px;
+  margin: 0 0 0 13px;
+}
+
+.c-breadcrumb_link:last-child:after {
+  display: none;
+}
+
+@media only screen and (max-width: 799px) {
+  .l-header_logo {
+    top: 7px;
+    left: 20px;
+    left: 50%;
+    width: 55px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .p-actionNavSearch {
+    position: absolute;
+    top: -8px;
+    right: 1px;
+    width: 40px;
+  }
+
+  .p-actionNavSearch input {
+    display: none;
+  }
+
+  .p-actionNavSearch_icon {
+    border-radius: 0;
+    background: none;
+    color: #0051e0;
+    color: #222;
+    padding: 0;
+  }
+
+  .p-actionNavSearch_icon:after {
+    top: -1px;
+    left: 5px;
+    font-size: 25px;
+  }
+
+  .uq-about {
+    font-size: 16px;
+    overflow: hidden;
+  }
+
+  .uq-aboutDb_content {
+    padding: 30px;
+    display: block;
+  }
+
+  .uq-aboutDb_body {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .uq-about_header {
+    margin-bottom: 60px;
+  }
+
+  .uq-about_headline img {
+    width: 150px;
+  }
+
+  .uq-about_copy {
+    font-size: 18px;
+  }
+
+  .u-mobileBlock {
+    display: block;
+  }
+
+  .uq-aboutDb_body>p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .uq-aboutEpisode_content {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .uq-aboutHeadline {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .uq-aboutHeadline_string {
+    font-size: 26px;
+  }
+
+  .uq-aboutEpisode_body p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .uq-aboutEpisode_image {
+    position: relative;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    right: 0;
+    bottom: -30px;
+  }
+
+  .uq-aboutChallenge_content {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .uq-aboutChallenge .uq-aboutHeadline {
+    margin-bottom: 60px;
+  }
+
+  .uq-aboutChallenge_items {
+    display: block;
+  }
+
+  .uq-aboutChallengeItem {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .uq-aboutChallengeItem_image {
+    margin-bottom: 10px;
+  }
+
+  .uq-aboutChallengeItem_headline {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .uq-aboutChallengeItem_description {
+    font-size: 14px;
+  }
+
+  .uq-aboutChallengeSaunner {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .uq-aboutChallengeSaunner_headline {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .uq-aboutChallengeSaunner_body p {
+    font-size: 14px;
+  }
+
+  .uq-aboutTeam_content {
+    width: 100%;
+    padding: 50px 0 70px;
+  }
+
+  .uq-aboutTeam_members {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -40px;
+  }
+
+  .uq-aboutTeamMember {
+    flex-basis: 50%;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  .uq-aboutTeamMember_icon {
+    width: 70px;
+  }
+
+  .uq-aboutTeamMember_name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .uq-aboutTeamMember_home {
+    font-size: 12px;
+  }
+
+  .uq-aboutThanks_content {
+    width: 100%;
+    padding: 50px 40px;
+  }
+
+  .uq-aboutThanks_headline {
+    font-size: 28px;
+  }
+
+  .c-share {
+    height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .c-share a {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+
+  .c-share a span {
+    padding-left: 17px;
+  }
+
+  .c-headline--lv2 {
+    margin-bottom: 20px;
+  }
+
+  .c-headline--lv2 .c-headline_string {
+    font-size: 20px;
+  }
+
+  .c-breadcrumb {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0 auto;
+    padding: 20px 0 20px 20px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .c-breadcrumb_links {
+    white-space: nowrap;
+    padding-right: 20px;
+  }
+
+  .c-breadcrumb_link {
+    padding: 0 0 0 5px;
+  }
+
+  .c-breadcrumb_link:first-of-type {
+    padding-left: 0;
+  }
+
+  .c-breadcrumb_link:after {
+    font-size: 8px;
+    margin-left: 8px;
+  }
 }

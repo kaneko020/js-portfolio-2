@@ -48,6 +48,10 @@
     box-shadow: none;
   }
 
+  .l-headerApp+.l-header {
+    position: sticky;
+  }
+
   .l-header_content {
     position: fixed;
     top: 0;
@@ -65,7 +69,7 @@
 
   .l-header_inner {
     position: relative;
-    /* background: #fff; */
+    background: #fff;
     z-index: 1000;
     width: 100%;
     min-height: 50px;
@@ -1001,6 +1005,10 @@
 
   .p-storeGoodsCard:last-of-type {
     display: none;
+  }
+
+  .p-storeGoodsCard:nth-of-type(3), .p-storeGoodsCard:nth-of-type(4) {
+    margin-bottom: 0;
   }
 
   .uq-topMagazine {

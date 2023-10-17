@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html {
+  overflow-y: scroll;
+}
+
 abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
   border: 0;
   background: transparent;
@@ -280,17 +284,6 @@ p {
   color: #fff;
 }
 
-.p-actionNav_link--login a {
-  position: relative;
-  border: 1px solid #0051e0;
-  background: none;
-  font-weight: 600;
-  color: #0051e0;
-  transition-timing-function: cubic-bezier(.215,.61,.355,1);
-  transition-duration: .25s;
-  transition-property: all;
-}
-
 .p-actionNav_link--button a {
   position: relative;
   border-radius: 8px;
@@ -303,6 +296,17 @@ p {
   color: #fff;
   height: 34px;
   padding: 0 15px;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .25s;
+  transition-property: all;
+}
+
+.p-actionNav_link--login a {
+  position: relative;
+  border: 1px solid #0051e0;
+  background: none;
+  font-weight: 600;
+  color: #0051e0;
   transition-timing-function: cubic-bezier(.215,.61,.355,1);
   transition-duration: .25s;
   transition-property: all;
@@ -331,6 +335,66 @@ p {
 .is-headerWhite .p-actionNav_link--register>a, [data-page-id=top] .p-actionNav_link--register>a {
   background: #fff;
   color: #0051e0;
+}
+
+.p-actionNavSearch {
+  position: relative;
+  top: 0;
+  height: 34px;
+  margin-left: 10px;
+}
+
+.p-actionNavSearch input {
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 0;
+  width: 210px;
+  height: 34px;
+  padding: 10px;
+  outline: none;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .25s;
+  transition-property: width opacity;
+}
+
+.p-actionNavSearch_icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  background: none;
+  display: block;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .25s;
+  transition-property: all;
+}
+
+.p-actionNavSearch_icon::after {
+  font-family: "Font Awesome 6 Free";
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: none;
+  content: "\f002";
+  font-variant: normal;
+  text-decoration: none;
+}
+
+.p-actionNavSearch_icon:after {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  font-size: 20px;
+  line-height: 32px;
+  height: 32px;
 }
 
 .p-menuButton {
@@ -2059,7 +2123,7 @@ p {
 
 .uq-toplottery_more {
   text-align: center;
-  /* margin-top: 16px; */
+  margin-top: 16px;
 }
 
 .uq-topSauna {
@@ -2902,18 +2966,9 @@ p {
 
 .l-footerSns_button:after {
   position: absolute;
-  top: 6px;
-  left: 12px;
-  font-size: 24px;
-  color: #fff;
-  pointer-events: none;
-}
-
-.l-footerSns_button:after {
-  position: absolute;
-  top: 6px;
-  left: 12px;
-  font-size: 24px;
+  top: 8px;
+  left: 14px;
+  font-size: 22px;
   color: #fff;
   pointer-events: none;
 }
@@ -2924,8 +2979,6 @@ p {
 
 .l-footerSns_button--instagram:after, .l-footerSns_button--twitter:after {
   font-family: "Font Awesome 6 Brands";
-  font-weight: 400;
-  content: "\f099";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
@@ -2945,10 +2998,13 @@ p {
   text-decoration: none;
   text-transform: none;
   content: "\f39e";
+  left: 15px;
 }
 
 .l-footerSns_button--instagram:after {
   content: "\f16d";
+  font-size: 27px;
+  top: 4px;
 }
 
 .desktop .l-footerSns_button:hover {

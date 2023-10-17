@@ -175,7 +175,7 @@
       document.addEventListener('DOMContentLoaded', function() {
         // クエリパラメータを取得
         const url = new URL(window.location.href);
-        const show_tab = 'login';
+        let show_tab = 'login';
         if (url.searchParams.get('show')) {
           show_tab = url.searchParams.get('show');
         }
